@@ -1,0 +1,34 @@
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+body {
+    font-family: Ubuntu;
+}
+p {
+    color: black;
+}
+h1 {
+    color: black;
+}
+/* unvisited link */
+a:link {
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    text-decoration:none;
+}
+
+.jumbotron {
+    background-image: url("img/jumbotron.jpg");
+    background-size: cover;
+  }
