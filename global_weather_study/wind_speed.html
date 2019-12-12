@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Global Weather Study</title>
 </head>
 
@@ -27,15 +27,12 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Global Weather Study Home</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="data.html">Data</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="compare.html">Latitudinal Comparison</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
@@ -56,13 +53,19 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <h1 class="mt-5">Latitude vs. Wind Speed (mph)</h1>
-        <p class="lead">Wind Speed plotted against Latitude for 2200+ cities around the globe.</p>
+        <div class="row">
+            <h3 class="mt-5">Latitude vs. Wind Speed (mph)</h3>
+        </div>
+        <div class="row">
+            <p class="lead">Wind Speed plotted against Latitude for 2200+ cities around the globe.</p>
+        </div>
+        <div class="row">
+            <img src="visuals/Latitude_Wind_Speed_chart.png">
+        </div>
     </main>
-
-    <footer class="footer mb-2">
+    <footer class="footer mx-3">
         <div class="container">
-            <span class="text-muted">Copyright &copy;2019 BryanSouza91</span>
+            <p>Copyright &copy;2019 BryanSouza91</p>
         </div>
     </footer>
 

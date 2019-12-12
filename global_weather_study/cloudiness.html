@@ -27,15 +27,12 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Global Weather Study Home</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="data.html">Data</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="compare.html">Latitudinal Comparison</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
@@ -56,27 +53,22 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <div class="container">
-            <div class="row">
-                <h1 class="mt-5">Latitude vs. Cloudiness %</h1>
-            </div>
-            <div class="row"> mt-5
-                <div class="col-md-6">
-                    <img src="visuals/Latitude_Cloudiness_chart.png">
-                </div>
-
-                <div class="col-md-6 mt-5">
-                    <p class="lead">Cloudiness plotted against Latitude for 2200+ cities around the globe.</p>
-                    <p>There seems to be correlation with specific latitudes.</p>
-                </div>
+        <div class="row align-items-center">
+            <h4 class="mt-1">Latitude vs. Cloudiness %</h4>
+        </div>
+        <div class="row mt-1">
+            <p class="lead">Cloudiness plotted against Latitude for 2200+ cities around the globe.<br>
+                There seems to be correlation with specific latitudes.</p>
+            <div class="img-grid">
+                <img src="visuals/Latitude_Cloudiness_chart.png">
             </div>
 
         </div>
-    </main>
 
-    <footer class="footer mb-2">
+    </main>
+    <footer class="footer mx-3">
         <div class="container">
-            <span class="text-muted">Copyright &copy;2019 BryanSouza91</span>
+            <p>Copyright &copy;2019 BryanSouza91</p>
         </div>
     </footer>
 

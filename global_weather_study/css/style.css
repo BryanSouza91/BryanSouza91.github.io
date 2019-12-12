@@ -1,5 +1,6 @@
 html, body {
     font-family: Ubuntu;
+    background: gray;
 }
 p {
     color: black;
@@ -32,3 +33,17 @@ a:active {
     background-attachment: fixed;
     background-position: center top;
   }
+footer {
+    height: 2rem;
+    color:white;
+    background: gray;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.img-grid {
+    overflow: hidden;
+}
+.img-grid img {
+    width: 100%;
+}
