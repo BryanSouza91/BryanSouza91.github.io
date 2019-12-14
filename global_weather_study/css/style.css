@@ -28,12 +28,6 @@ a:hover {
 a:active {
     text-decoration:none;
 }
-
-.jumbotron {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
-  }
 .img-grid {
     overflow: hidden;
 }
