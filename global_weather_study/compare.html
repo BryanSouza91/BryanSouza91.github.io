@@ -20,26 +20,26 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Global Weather Study</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon ml-auto"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav float-right">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse ml-auto" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto">
                         <a class="nav-link" href="data.html">Data</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item active ml-auto">
                         <a class="nav-link" href="compare.html">Latitudinal Comparison <span
                                 class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ml-auto">
                         <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <p class="text-muted"> Latitude vs. </p>
+                        <div class="dropdown-menu dropdown-menu-right ml-auto" aria-labelledby="navbarDropdownMenuLink">
+                            <p class="mx-2 text-muted"> Latitude vs. </p>
                             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
                             <a class="dropdown-item" href="temperature.html">Temperature</a>
@@ -54,37 +54,36 @@
     <!-- Begin page content -->
     <main role="main">
         <div class="container align-items-center">
-            <div class="row"></div>
-            <div class="row mx-2">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 card">
-                    <h4 class="title mt-5">Cloudiness, Humidity, Temperature, Wind Speed vs. Latitude</h4>
+            <div class="row">
+                <div class="row mx-2">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h4 class="title mt-5">Cloudiness, Humidity, Temperature, Wind Speed vs. Latitude</h4>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="img-grid">
-                <div class="row mt-4">
-                    <div class="col-md-6 col-sm-12 mt-4">
-                        <img src="visuals/Latitude_Cloudiness_chart.png">
-                    </div>
-                    <div class="col-md-6 col-sm-12 mt-4">
-                        <img src="visuals/Latitude_Humidity_chart.png">
-                    </div>
-                    <div class="row mt-1">
+                <div class="img-grid">
+                    <div class="row mt-4">
                         <div class="col-md-6 col-sm-12 mt-4">
-                            <img src="visuals/Latitude_Temperature_chart.png">
+                            <img src="visuals/Latitude_Cloudiness_chart.png" class="rounded-lg">
                         </div>
                         <div class="col-md-6 col-sm-12 mt-4">
-                            <img src="visuals/Latitude_Wind_Speed_chart.png">
+                            <img src="visuals/Latitude_Humidity_chart.png" class="rounded-lg">
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-md-6 col-sm-12 mt-4">
+                                <img src="visuals/Latitude_Temperature_chart.png" class="rounded-lg">
+                            </div>
+                            <div class="col-md-6 col-sm-12 mt-4">
+                                <img src="visuals/Latitude_Wind_Speed_chart.png" class="rounded-lg">
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-4"></div>
                 </div>
             </div>
-        </div>
     </main>
 
-    <footer class="footer mx-3">
+    <footer class="footer my-3">
         <div class="container">
             <p>Copyright &copy;2019 BryanSouza91</p>
         </div>
