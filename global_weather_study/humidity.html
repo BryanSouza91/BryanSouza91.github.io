@@ -19,7 +19,9 @@
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-            <a class="navbar-brand" href="index.html"><h1>Global Weather Study</h1></a>
+            <a class="navbar-brand" href="index.html">
+                <h1>Global Weather Study</h1>
+            </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon ml-auto"></span>
@@ -54,9 +56,13 @@
     <!-- Begin page content -->
     <main role="main" class="container-fluid">
         <div class="row px-3 py-3">
-            <h2>Latitude vs. Humidity %</h2>
-            <h4>Humidity plotted against Latitude for 2200+ cities around the globe.</h4>
-            <div class="img-grid">
+            <h2 class="col-md-12 col-sm-12">Latitude vs. Humidity %</h2>
+            <h4 class="col-md-12 col-sm-12">Humidity plotted against Latitude for 2200+ cities around the globe.</h4>
+            <p class="col-md-12 col-sm-12">For the cities above the equator there seems to be a positive correlation with humidity.
+                Also based on density the equator and northern latitudes have higher humidity, at least at the time this
+                data was collected.
+            </p>
+            <div class="col-md-12 col-sm-12 img-grid">
                 <img src="visuals/Latitude_Humidity_chart.png">
             </div>
         </div>

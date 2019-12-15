@@ -19,7 +19,9 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html"><h1>Global Weather Study</h1></a>
+      <a class="navbar-brand" href="index.html">
+        <h1>Global Weather Study</h1>
+      </a>
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon ml-auto"></span>
@@ -54,26 +56,24 @@
   <main role="main">
     <div class="container-fluid">
       <div class="row justify-content-between px-3 py-3">
-        <div class="col-md-7 bg-white card">
+        <div class="col-md-7 bg-white card px-3">
           <h2 class="card-title my-2">Global Weather Study</h2>
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Feugiat vivamus at augue eget arcu dictum varius duis. Orci eu lobortis elementum nibh
-            tellus molestie nunc non. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras
-            tincidunt. Maecenas pharetra convallis posuere morbi leo. Nunc non blandit massa enim nec dui nunc mattis.
-            Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Hendrerit gravida rutrum quisque
-            non. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Feugiat pretium nibh ipsum
-            consequat nisl. Vitae turpis massa sed elementum tempus egestas sed. Amet justo donec enim diam vulputate.
-            At volutpat diam ut venenatis tellus in metus vulputate. Nulla facilisi etiam dignissim diam quis enim.
-            Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum.
+            For this study, I was tasked with building weather dataset of over 500 cities around the globe. Python
+            allowed me to build a list of random geo-coordinates to use with the <a
+              href="https://github.com/wingchen/citipy">citipy</a> package which takes those coordinates and locates the
+            nearest city around the globe. With the list of city names citipy helped me create, I began using the <a
+              href="https://openweathermap.org/api">Open
+              Weather Map API</a> to request the current data. With this data I built a <a
+              href="https://github.com/pandas-dev/pandas"> Pandas
+            </a> dataframe to organize and analyze the <a href="data.html"> data</a>.
           </p>
           <p class="card-text">
-            Tempor nec feugiat nisl pretium fusce id. Quam lacus suspendisse faucibus interdum posuere. Nibh venenatis
-            cras sed felis eget velit. Viverra maecenas accumsan lacus vel facilisis volutpat est. Felis donec et odio
-            pellentesque diam volutpat commodo. Mauris vitae ultricies leo integer. Imperdiet massa tincidunt nunc
-            pulvinar sapien et ligula. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Nunc id cursus
-            metus aliquam eleifend mi in nulla. Consequat nisl vel pretium lectus quam id. Mauris nunc congue nisi vitae
-            suscipit. A scelerisque purus semper eget. Sed blandit libero volutpat sed cras.
+            Equipped with this fresh data for 2200+ cities, I analyzed the data and noticed some patterns. We specifically analyzed
+            cloudiness, humidity, temperature and wind speed. These patterns easily became
+            visible when visualized with <a href="https://github.com/matplotlib/matplotlib">matplotlib</a>. The
+            visualizations all share the same x-axis units, Latitude, this allows for easy comparison and and
+            understanding. Please check out all of the visualizations I created. Thank you for visiting.
           </p>
         </div>
         <div class="col-md-4 bg-white card px-3">
