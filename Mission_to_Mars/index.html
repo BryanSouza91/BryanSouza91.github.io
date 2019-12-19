@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Varela Round, sans-serif;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    .jumbotron {
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+    .img-grid {
+      overflow: hidden;
+    }
+
+    .img-grid img {
+      width: 100%;
+    }
+  </style>
+  <title>Mission to Mars</title>
+</head>
+
+<body class="bg-light">
+  <div class="jumbotron bg-dark" style="background-image: url('mission_to_mars.jpg');">
+    <h1 class="display-4">Mission
+      to Mars</h1>
+    <p class="lead">
+      <p class="text-muted">Button disabled. When deployed on a Flask server the button calls a Python function to
+        scrape the latest data from various sources.</p>
+      <a class="btn btn-success btn-lg" href="#" role="button">Get Latest Data</a>
+    </p>
+  </div>
+  <div class="container-fluid">
+    <div class="row py-3 px-3">
+      <div class="col-12">
+        <div class="card bg-dark">
+          <h2 class="card-title py-1 px-1">Latest Mars News</h2>
+          <h4 class="card-subtitle py-1 px-1">NASA's Mars 2020 Rover Completes Its First Drive</h4>
+          <p class="card-body py-1 px-1">In a 10-plus-hour marathon, the rover steered, turned and drove in 3-foot
+            (1-meter) increments over small ramps.</p>
+        </div>
+      </div>
+      <div class="row py-3 px-3">
+        <div class="col-8">
+          <div class="card bg-dark">
+            <h2 class="card-title py-1 px-1">Featured Mars Image</h2>
+            <div class="card-body">
+              <img src="https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA16101_ip.jpg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card bg-dark">
+            <h4 class="card-title py-1 px-1">Mars Weather</h4>
+            <div class="card-body">InSight sol 377 (2019-12-18) low -97.5ºC (-143.6ºF) high -19.9ºC (-3.9ºF)\nwinds from
+              the SSE at 6.4 m/s (14.3 mph) gusting to 21.0 m/s (47.1 mph)\npressure at 6.50 hPa</div>
+            <h4 class="card-title py-1 px-1">Mars Facts</h4>
+            <div class="card-body">
+              <table class="tablepress tablepress-id-p-mars" id="tablepress-p-mars-no-2">
+                <tbody>
+                  <tr class="row-1 odd">
+                    <td class="column-1"><strong>Equatorial Diameter:</strong></td>
+                    <td class="column-2">6,792 km<br /></td>
+                  </tr>
+                  <tr class="row-2 even">
+                    <td class="column-1"><strong>Polar Diameter:</strong></td>
+                    <td class="column-2">6,752 km<br /></td>
+                  </tr>
+                  <tr class="row-3 odd">
+                    <td class="column-1"><strong>Mass:</strong></td>
+                    <td class="column-2">6.39 × 10^23 kg<br /> (0.11 Earths)</td>
+                  </tr>
+                  <tr class="row-4 even">
+                    <td class="column-1"><strong>Moons:</strong></td>
+                    <td class="column-2">2 (<a href="https://space-facts.com/moons/phobos/">Phobos</a> &amp; <a
+                        href="https://space-facts.com/moons/deimos/">Deimos</a>)</td>
+                  </tr>
+                  <tr class="row-5 odd">
+                    <td class="column-1"><strong>Orbit Distance:</strong></td>
+                    <td class="column-2">227,943,824 km<br /> (1.38 AU)</td>
+                  </tr>
+                  <tr class="row-6 even">
+                    <td class="column-1"><strong>Orbit Period:</strong></td>
+                    <td class="column-2">687 days (1.9 years)<br /></td>
+                  </tr>
+                  <tr class="row-7 odd">
+                    <td class="column-1"><strong>Surface Temperature: </strong></td>
+                    <td class="column-2">-87 to -5 °C</td>
+                  </tr>
+                  <tr class="row-8 even">
+                    <td class="column-1"><strong>First Record:</strong></td>
+                    <td class="column-2">2nd millennium BC</td>
+                  </tr>
+                  <tr class="row-9 odd">
+                    <td class="column-1"><strong>Recorded By:</strong></td>
+                    <td class="column-2">Egyptian astronomers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row px-4 py-3">
+          <div class="card bg-dark py-1 px-1">
+            <h4 class="card-title py-1 px-1">Mars Hemispheres</h4>
+            <div class="col-12 img-grid">
+              <div class="row py-1 px-1">
+                <div class="col-md-6 col-sm-12 mt-3">
+                  <h5>Cerberus Hemisphere</h5>
+                  <img src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg"
+                    class="rounded-lg">
+                </div>
+                <div class="col-md-6 col-sm-12 mt-3">
+                  <h5>Schiaparelli Hemisphere</h5>
+                  <img
+                    src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg"
+                    class="rounded-lg">
+                </div>
+                <div class="row py-1 px-1">
+                  <div class="col-md-6 col-sm-12 mt-3">
+                    <h5>Syrtis Major Hemisphere</h5>
+                    <img
+                      src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg"
+                      class="rounded-lg">
+                  </div>
+                  <div class="col-md-6 col-sm-12 mt-3">
+                    <h5>Valles Marineris Hemisphere</h5>
+                    <img
+                      src="http://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"
+                      class="rounded-lg">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
