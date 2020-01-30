@@ -1,7 +1,7 @@
 // Build Bubble chart from sample data
 function buildBubbleChart(sample) {
 
-  let jsonFile = "/Homework/static/samples.json";
+  let jsonFile = "/static/samples.json";
   d3.json(jsonFile).then(function (data) {
     let sampleData = data["samples"].filter(each => each.id == sample)[0];
     // console.log(sampleData);
@@ -44,7 +44,7 @@ function buildBubbleChart(sample) {
 // Build Gauge chart from sample data
 function buildGaugeChart(sample) {
 
-  let jsonFile = "/Homework/static/samples.json";
+  let jsonFile = "/static/samples.json";
   d3.json(jsonFile).then(function (data) {
     let sampleData = data["metadata"].filter(each => each.id == sample)[0];
     // console.log(sampleData);
@@ -72,7 +72,7 @@ function buildGaugeChart(sample) {
 // Build bar chart from sample data
 function buildBarChart(sample) {
 
-  let jsonFile = "/Homework/static/samples.json";
+  let jsonFile = "/static/samples.json";
   d3.json(jsonFile).then(function (data) {
     let sampleData = data["samples"].filter(each => each.id == sample)[0];
     // console.log(sampleData);
@@ -109,7 +109,7 @@ function buildBarChart(sample) {
 // Build Demographics Table from Metadata
 function buildDemographicsTable(sample) {
 
-  let jsonFile = "/Homework/static/samples.json";
+  let jsonFile = "/static/samples.json";
   d3.json(jsonFile).then(function (data) {
 
     // select demographics table
@@ -135,7 +135,7 @@ function init() {
   let sampleSel = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  let jsonFile = "/Homework/static/samples.json";
+  let jsonFile = "/static/samples.json";
 
   d3.json(jsonFile).then((data) => {
     data.names.forEach((name) => {
