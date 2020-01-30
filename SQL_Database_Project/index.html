@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
+            <div class="container py-3 px-3">
                 <div class="row">
                     <div class="col-sm-4 col-md-4 py-4">
                         <a href="../index.html">
@@ -46,7 +46,7 @@
             <div class="container d-flex justify-content-between">
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
                     <div class="row">
-                            <h1 class="float-left">SQL Database Project</h1>
+                        <h1 class="float-left">SQL Database Project</h1>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
@@ -63,8 +63,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="img/bonus_plot_bar.jpg"
-                                alt="Card image cap">
+                            <img class="card-img-top" src="img/bonus_plot_bar.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">This plot shows the average salary by position.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -75,35 +74,311 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="img/bonus_plot_hist.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">This is a plot of the salaries from the dataset. They were binned by $10k with a CASE block in SQL.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="img/bonus_plot_hist.jpg">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </a>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="img/bonus_plot_hist.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">This is a plot of the salaries from the dataset. They were
+                                        binned
+                                        by $10k with a CASE block in SQL.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="img/bonus_plot_hist.jpg">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src="img/QuickDBD-sql-challenge-ERD.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Using <a href="https://www.quickdatabasediagrams.com/">Quick
+                                            DBD's
+                                            GUI</a>, I built an SQL database diagram to make the proper relationships
+                                        between the various tables.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a href="img/QuickDBD-sql-challenge-ERD.png">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" src="img/QuickDBD-sql-challenge-ERD.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text">Using SQL and PostgreSQL with pgadmin4 I built a SQL database.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="img/QuickDBD-sql-challenge-ERD.png">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    </a>
+                </div>                           
+                    <h5>SQL Queries</h5>
+                                <div class="row card py-3 px-3">
+                                    <div class="card-title">
+                                    <h5>Schema to build Database</h5>
+                                    </div>
+                                    <div class="card-body">
+                                    <p><pre><code>
+                                        -- Exported from QuickDBD: <a
+                                            href="https://www.quickdatabasediagrams.com/"></a>
+                                        -- Link to schema: <a
+                                            href="https://app.quickdatabasediagrams.com/#/d/KYVMml"></a>
+                                        -- NOTE! If you have used non-SQL datatypes in your design, you will have to
+                                        change these here.
+
+
+                                        CREATE TABLE "departments" (
+                                        "dept_no" VARCHAR NOT NULL,
+                                        "dept_name" VARCHAR NOT NULL,
+
+                                        CONSTRAINT "pk_departments" PRIMARY KEY (
+                                        "dept_no"
+                                        )
+                                        );
+
+                                        CREATE TABLE "dept_emp" (
+                                        "emp_no" INTEGER NOT NULL,
+                                        "dept_no" VARCHAR NOT NULL,
+                                        "from_date" date NOT NULL,
+                                        "to_date" date NOT NULL,
+
+                                        CONSTRAINT "pk_dept_emp" PRIMARY KEY (
+                                        "emp_no","dept_no"
+                                        )
+                                        );
+
+                                        CREATE TABLE "dept_manager" (
+                                        "dept_no" VARCHAR NOT NULL,
+                                        "emp_no" INTEGER NOT NULL,
+                                        "from_date" date NOT NULL,
+                                        "to_date" date NOT NULL,
+
+                                        CONSTRAINT "pk_dept_manager" PRIMARY KEY (
+                                        "emp_no","dept_no"
+                                        )
+                                        );
+
+                                        CREATE TABLE "employees" (
+                                        "emp_no" INTEGER NOT NULL,
+                                        "birth_date" date NOT NULL,
+                                        "first_name" VARCHAR NOT NULL,
+                                        "last_name" VARCHAR NOT NULL,
+                                        "gender" VARCHAR NOT NULL,
+                                        "hire_date" date NOT NULL,
+
+                                        CONSTRAINT "pk_employees" PRIMARY KEY (
+                                        "emp_no"
+                                        )
+                                        );
+
+                                        CREATE TABLE "salaries" (
+                                        "emp_no" INTEGER NOT NULL,
+                                        "salary" INTEGER NOT NULL,
+                                        "from_date" date NOT NULL,
+                                        "to_date" date NOT NULL,
+                                        CONSTRAINT "pk_salaries" PRIMARY KEY (
+                                        "emp_no","salary","from_date"
+                                        )
+                                        );
+
+                                        CREATE TABLE "titles" (
+                                        "emp_no" INTEGER NOT NULL,
+                                        "title" VARCHAR NOT NULL,
+                                        "from_date" date NOT NULL,
+                                        "to_date" date NOT NULL,
+
+                                        CONSTRAINT "pk_titles" PRIMARY KEY (
+                                        "emp_no","title","from_date"
+                                        )
+                                        );
+
+                                        ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN
+                                        KEY("emp_no")
+                                        REFERENCES "employees" ("emp_no");
+
+                                        ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_dept_no" FOREIGN
+                                        KEY("dept_no")
+                                        REFERENCES "departments" ("dept_no");
+
+                                        ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_dept_no" FOREIGN
+                                        KEY("dept_no")
+                                        REFERENCES "departments" ("dept_no");
+
+                                        ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_no" FOREIGN
+                                        KEY("emp_no")
+                                        REFERENCES "employees" ("emp_no");
+
+                                        ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN
+                                        KEY("emp_no")
+                                        REFERENCES "employees" ("emp_no");
+
+                                        ALTER TABLE "titles" ADD CONSTRAINT "fk_titles_emp_no" FOREIGN KEY("emp_no")
+                                        REFERENCES "employees" ("emp_no");
+                                        </code></pre>
+                                    </p>
                                 </div>
+                                </div>
+                                <div class="row card py-3 px-3">
+                                    <div class="card-title">
+                                    <h5>Main Queries Used to Complete Analysis</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        <pre><code>
+                                        -- List the following details of each employee: employee number, last name,
+                                        first name, gender, and salary.
+
+                                        SELECT e.emp_no,e.last_name,e.first_name,e.gender,s.salary
+                                        FROM employees e
+                                        INNER JOIN salaries s ON s.emp_no = e.emp_no;
+
+                                        -- List employees who were hired in 1986.
+
+                                        SELECT e.emp_no,e.last_name,e.first_name,e.hire_date
+                                        FROM employees e
+                                        WHERE e.hire_date BETWEEN '1986-01-01' AND '1986-12-31';
+
+                                        -- List the manager of each department with the following information:
+                                        department number, department name, the manager's employee number, last
+                                        name, first name, and start and end employment dates.
+
+                                        SELECT
+                                        d.dept_no,d.dept_name,e.emp_no,e.last_name,e.first_name,dm.from_date,dm.to_date
+                                        FROM departments d
+                                        INNER JOIN dept_manager dm ON d.dept_no = dm.dept_no
+                                        INNER JOIN employees e ON e.emp_no = dm.emp_no;
+
+                                        -- List the department of each employee with the following information:
+                                        employee number, last name, first name, and department name.
+
+                                        SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
+                                        FROM departments d
+                                        INNER JOIN dept_manager dm ON d.dept_no = dm.dept_no
+                                        INNER JOIN employees e ON e.emp_no = dm.emp_no;
+
+                                        -- List all employees whose first name is "Hercules" and last names begin
+                                        with "B."
+
+                                        SELECT *
+                                        FROM employees e
+                                        WHERE e.first_name = 'Hercules' AND e.last_name LIKE 'B%';
+
+                                        -- List all employees in the Sales department, including their employee
+                                        number, last name, first name, and department name.
+
+                                        SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
+                                        FROM departments d
+                                        INNER JOIN dept_manager dm ON d.dept_no = dm.dept_no
+                                        INNER JOIN employees e ON e.emp_no = dm.emp_no
+                                        WHERE d.dept_name = 'Sales';
+
+                                        -- List all employees in the Sales and Development departments, including
+                                        their employee number, last name, first name, and department name.
+
+                                        SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
+                                        FROM departments d
+                                        INNER JOIN dept_manager dm ON d.dept_no = dm.dept_no
+                                        INNER JOIN employees e ON e.emp_no = dm.emp_no
+                                        WHERE d.dept_name = 'Sales' OR d.dept_name = 'Development';
+
+                                        -- In descending order, list the frequency count of employee last names,
+                                        i.e., how many employees share each last name.
+
+                                        SELECT e.last_name,count(e.last_name)
+                                        FROM employees e
+                                        GROUP BY e.last_name
+                                        ORDER BY e.last_name DESC;
+
+
+                                        -- Bonus Query emp_no:499942
+
+                                        SELECT e.emp_no,e.last_name,e.first_name
+                                        FROM employees e
+                                        WHERE e.emp_no = '499942';
+                                        </code></pre>
+                                    </p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="row card py-3 px-3">
+                                    <div class="card-title">
+                                        <h5>Bonus Queries with CASE block</h5>
+                                    </div>
+                                    <div class="card-body"> 
+                                        <p>
+                                            <pre><code>
+                                            SELECT count(*) AS Count,
+                                                    max(salary),
+                                                    min(salary),
+                                                    round(avg(salary),
+                                                    2)
+                                            FROM salaries; 
+
+
+                                            ALTER TABLE salaries 
+                                                ADD salary_range varchar;
+
+                                            UPDATE salaries 
+                                            SET salary_range = CASE
+                                                WHEN salary >= 40000
+                                                    AND salary < 50000 THEN
+                                                '[40000-50000)'
+                                                WHEN salary >= 50000
+                                                    AND salary < 60000 THEN
+                                                '[50000-60000)'
+                                                WHEN salary >= 60000
+                                                    AND salary < 70000 THEN
+                                                '[60000-70000)'
+                                                WHEN salary >= 70000
+                                                    AND salary < 80000 THEN
+                                                '[70000-80000)'
+                                                WHEN salary >= 80000
+                                                    AND salary < 90000 THEN
+                                                '[80000-90000)'
+                                                WHEN salary >= 90000
+                                                    AND salary < 100000 THEN
+                                                '[90000-100000)'
+                                                WHEN salary >= 100000
+                                                    AND salary < 110000 THEN
+                                                '[100000-110000)'
+                                                WHEN salary >= 110000
+                                                    AND salary < 120000 THEN
+                                                '[110000-120000)'
+                                                WHEN salary >= 120000
+                                                    AND salary < 130000 THEN
+                                                '[120000-130000)'
+                                                ELSE 'Unknown' end;
+                                                
+                                            SELECT *
+                                            FROM salaries;
+
+                                            DROP VIEW salary_counts;
+
+                                            CREATE VIEW	 salary_counts AS SELECT salary_range,
+                                                    count(salary_range) AS Count
+                                            FROM salaries
+                                            GROUP BY  salary_range
+                                            ORDER BY  Count desc;
+
+                                            SELECT *
+                                            FROM salary_counts; 
+
+
+                                            DROP VIEW avg_salary;
+
+                                            CREATE VIEW avg_salary AS SELECT t.title,
+                                                    round(avg(s.salary),
+                                                    2) AS avg_salary
+                                            FROM salaries s
+                                            INNER JOIN titles t
+                                                ON t.emp_no = s.emp_no
+                                            GROUP BY  t.title
+                                            ORDER BY  avg_salary desc;
+
+                                            SELECT *
+                                            FROM avg_salary; 
+                                            </code></pre>
+                                    </p>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </main>

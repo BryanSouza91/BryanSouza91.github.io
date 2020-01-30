@@ -1,5 +1,6 @@
 html, body {
     font-family: Ubuntu;
+    overflow-x: hidden;
 }
 p {
     color: black;
