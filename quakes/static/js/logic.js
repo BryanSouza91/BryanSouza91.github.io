@@ -62,8 +62,11 @@ function createMarkers(response) {
             })
         }).bindTooltip("<div class='popup'><h2>" + quake.properties.place + "</h2>"
             + "<h3> Magnitude: " + quake.properties.mag
+            + "<br> Event Significance: " + quake.properties.sig
+            + "<br> Maximum Estimated Instrumental Intensity: " + quake.properties.mmi 
             + "<br> Depth of Epicenter: " + quake.geometry.coordinates[2]
-            + "km<br> Time: " + new Date(quake.properties.time)
+            + "km<br> Number of 'Felt' Reports(submitted): " + quake.properties.felt
+            + "<br> Time: " + new Date(quake.properties.time + quake.properties.tz)
             + "</h3></div>");
 
         quakeMarkers.push(quakeMarker);
