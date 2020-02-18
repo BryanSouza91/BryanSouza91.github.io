@@ -31,7 +31,7 @@ function createMap(earthquakes) {
 function createMarkers(response) {
     // Pull the "features" property off of response.data
     let quakes = response.features;
-
+    console.log(quakes)
     // Initialize an array to hold quake markers
     let quakeMarkers = [];
 
@@ -51,7 +51,7 @@ function createMarkers(response) {
     // For each quake, create a marker and bind a popup with the quake's name, magnitude, and depth
     for (let index = 0; index < quakes.length; index++) {
         let quake = quakes[index];
-        
+        // console.log(`magType: ${quake.properties.magType}`);
 
         // Add the marker to the quakeMarkers array
         let quakeMarker = L.marker([quake.geometry.coordinates[1], quake.geometry.coordinates[0]], {
@@ -63,9 +63,7 @@ function createMarkers(response) {
         }).bindTooltip("<div class='popup'><h2>" + quake.properties.place + "</h2>"
             + "<h3> Magnitude: " + quake.properties.mag
             + "<br> Depth of Epicenter: " + quake.geometry.coordinates[2]
-            + "km<br> Event Significance: " + quake.properties.sig            
-            + "<br> Number of 'Felt' Reports(submitted): " + quake.properties.felt
-            + "<br> Maximum Estimated Instrumental Intensity: " + quake.properties.mmi
+            + "km<br> Number of 'Felt' Reports(submitted): " + quake.properties.felt
             + "<br> Time: " + new Date(quake.properties.time + quake.properties.tz)
             + "</h3></div>");
 
@@ -75,4 +73,11 @@ function createMarkers(response) {
     createMap(L.layerGroup(quakeMarkers));
 }
 // Perform an API call to the Earthquake Notification Service API to get quake information. Call createMarkers when complete
-d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson", createMarkers);
+function httpGet(URL)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", URL, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return JSON.parse(xmlHttp.responseText);
+};
+createMarkers(httpGet("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"));
