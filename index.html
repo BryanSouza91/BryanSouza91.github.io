@@ -1,189 +1,480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>BryanSouza91 GitHub Projects</title>
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bryan Souza Portfolio | Data Specialist</title>
 </head>
 
 <body>
-  <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-4 py-4">
-            <a href="index.html">
-              <h4 class="text-white">Home</h4>
-              <p class="text-muted">Project Album</p>
-            </a>
-          </div>
-          <div class="col-sm-4 col-md-4 py-4">
-            <a href="about.html">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Learn more about me here!</p>
-            </a>
-          </div>
-          <div class="col-sm-4 col-md-4 py-4">
-            <a href="contact.html">
-              <h4 class="text-white">Contact</h4>
-              <p class="text-muted">Let's work together!</p>
-            </a>
-          </div>
+    <header>
+        <div id="brand-top">
+            <div id="brand-name" class="text-center">
+                <h1>
+                    Bryan Souza
+                </h1>
+                <h3>
+                    Data Specialist
+                </h3>
+            </div>
+            <div id="nav" class="px-1">
+                <nav class="nav nav-pills justify-content-center">
+                    <a class="nav-link" href="#projects" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="projects">
+                        Projects <span class="badge badge-success">4</span>
+                    </a>
+                    <a class="nav-link" href="#contact" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="contact">
+                        Contact
+                    </a>
+                    <a class="nav-link" href="#about" role="button">
+                        About
+                    </a>
+                </nav>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="navbar navbar-light bg-light shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path
-                  d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.1h-15V5h15v14.1zm0-16.1h-15c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
-                <path fill="none" d="M0 0h24v24H0z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z" />
-                <path fill="none" d="M0 0h24v24H0z" />
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <g fill="#010101">
-                  <circle cx="7" cy="14" r="3" />
-                  <circle cx="11" cy="6" r="3" />
-                  <circle cx="16.6" cy="17.6" r="3" />
-                </g>
-              </svg>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <h1 class="float-right">BryanSouza91 GitHub Projects</h1>
-            </div>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <main role="main">
-
-    <section class="jumbotron text-center" style="background-image: url('img/jumbotron.jpg');">
-      <div class="container">
-        <h1 class="jumbotron-heading text-white">BryanSouza91</h1>
-        <p class="lead text-white">Welcome to my GitHub projects webpage.<br>Here are the projects I am working on or
-          have completed.</p>
-        <p>
-          <a href="contact.html" class="btn btn-secondary my-2">Contact Me</a>
-          <a href="about.html" class="btn btn-secondary my-2">About Me</a>
-        </p>
-      </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="global_weather_study/visuals/Latitude_Temperature_chart.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a study of weather by City. There are over 2200 cities around the
-                  world included in this analysis.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a href="/global_weather_study/">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="Mission_to_Mars/img/mission_to_mars.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">In this project I scraped data from various websites to build a website that
-                  details the planet of Mars.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a href="/Mission_to_Mars/">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="img/quakes.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Using the USGS Earthquake API, I created a weekly map of seismic events around the globe.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a href="/quakes/">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card mb-4 shadow-sm">
-              <img class="card-img-top" src="SQL_Database_Project/img/QuickDBD-sql-challenge-ERD.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Using SQL and PostgreSQL with pgadmin4 I built a SQL database.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a href="/SQL_Database_Project/">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+    </header>
+    <main role="main" class="m-2">
+        <div id="covid-update" class="alert alert-danger text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="alert-heading">
+                COVID-19 Update
+            </h4>
+            <p>
+                Check out these links:<br>
+                <a class="alert-link"
+                    href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
+                    target="_blank">
+                    US CDC "How to Protect yourself"
+                </a>
+                <br>
+                <a class="alert-link" href="https://www.worldometers.info/coronavirus/" target="_blank">
+                    Latest World Coronavirus Numbers
+                </a>
+            </p>
+            <hr>
+            <p class="mb-0">
+                Stay
+                <strong>
+                    SAFE
+                </strong>
+                by staying
+                <strong>
+                    HOME!
+                </strong>
+                <br>
+                This will keep our most vulnerable <br>from suffering from this disease.
+            </p>
         </div>
-      </div>
-    </div>
-    </div>
-  </main>
-  <footer class="bg-light fixed-bottom pt-3">
-    <div class="container">
-      <p class="text-muted float-right">
-        <a href="#">Back to top</a>
-      </p>
-      <p>Copyright &copy;2019 BryanSouza91</p>
-    </div>
-  </footer>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        <div id="body" class="row mx-1">
+            <div id="projects" class="collapse" data-parent="body">
+                <div class="row">
+                    <div class="col col-md-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-first-tab" data-toggle="pill" href="#v-pills-first"
+                                role="tab" aria-controls="v-pills-first" aria-selected="true">
+                                USGS Earthquake Map
+                            </a>
+                            <a class="nav-link" id="v-pills-second-tab" data-toggle="pill" href="#v-pills-second"
+                                role="tab" aria-controls="v-pills-second" aria-selected="false">
+                                Mars Data-Mining
+                            </a>
+                            <a class="nav-link" id="v-pills-third-tab" data-toggle="pill" href="#v-pills-third"
+                                role="tab" aria-controls="v-pills-third" aria-selected="false">
+                                National Wildfires Visualized
+                            </a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                DengAI <span class="badge badge-success">Latest!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-md-9">
+                        <div class="tab-content flex-column" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel"
+                                aria-labelledby="v-pills-first-tab">
+                                <div class="container">
+                                    <h4>
+                                        USGS Earthquake Map
+                                    </h4>
+                                    <p class="mb-0">Project Completion:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%">100%</div>
+                                    </div>
+                                    <p>Skills:
+                                        <span class="badge badge-success">Leaflet.js</span>
+                                        <span class="badge badge-success">HTML</span>
+                                        <span class="badge badge-success">CSS</span>
+                                        <span class="badge badge-success">JavaScript</span>
+                                        <span class="badge badge-success">Bootstrap 4</span>
+                                        <span class="badge badge-success">API</span>
+                                        <span class="badge badge-success">GEOJSON</span>
+                                    </p>
+                                    <p>
+                                        This map shows the weekly Earthquakes recorded by
+                                        the United States Geological Society. The data is real-time and updated every
+                                        minute. from the USGS Earthquake Hazards Program. I used the Leaflet.js package
+                                        to build the map and place the markers. I decided to use <em>Exclamation Triangles</em> from
+                                        the FontAwesome 5 library. These markers were then color-coded based on the
+                                        earthquake's magnitude.
+                                        <div class="col-9">
+                                            <ul>
+                                                <li>Less than or equal to 1.0: <span class="float-right"
+                                                        style="color: yellow;">Yellow</span></li>
+                                                <li>Greater than 1.0 and less than or equal to 2.5: <span
+                                                        class="float-right" style="color: orange;">Orange</span></li>
+                                                <li>Greater than 2.5 and less than or equal to 4.5: <span
+                                                        class="float-right" style="color: orangered;">Orange-Red</span>
+                                                </li>
+                                                <li>Greater than 4.5: <span class="float-right"
+                                                        style="color: red;">Red</span></li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        The API is available for access here: <a
+                                            href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+                                            target="_blank">USGS Earthquake API</a>
+                                    </p>
+                                    <!-- The quake map div -->
+                                    <div id="quake-map" class="border border-primary rounded mx-auto"></div>
+                                    <!-- <div id="quake-table" class="border border-primary rounded mx-auto"></div> -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-second" role="tabpanel"
+                                aria-labelledby="v-pills-second-tab">
+                                <div class="container">
+                                    <h4>
+                                        Mission to Mars
+                                    </h4>
+                                    <p class="font-weight-bold">
+                                        A Web Scraping Project
+                                    </p>
+                                    <p class="mb-0">Project Completion:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%">100%</div>
+                                    </div>
+                                    <p>Skills:
+                                        <span class="badge badge-success">Python</span>
+                                        <span class="badge badge-success">Flask</span>
+                                        <span class="badge badge-success">HTML</span>
+                                        <span class="badge badge-success">CSS</span>
+                                        <span class="badge badge-success">JavaScript</span>
+                                        <span class="badge badge-success">Bootstrap 4</span>
+                                        <span class="badge badge-success">API</span>
+                                        <span class="badge badge-success">JSON</span>
+                                    </p>
+                                    <p>
+                                        I created a web page, using basic Bootstrap 4, that displayed various data and
+                                        information about the planet Mars, such as weather from tweets and satellite images.
+                                        This data and information was scraped and mined from various sources on the
+                                        internet. Python allowed me to quickly build a script to get the job done. I
+                                        used the python packages Splinter and Beautiful Soup to access the webpages,
+                                        then navigate them by clicking links and selecting HTML elements before
+                                        extracting the HTML or image data I was going to use. This data was then injeted
+                                        into the webpage I built using the Flask web development package to display this
+                                        aggregate information in an easy to digest manner.
+                                        <br>
+                                        <br>
+                                        The webpage can be viewed here: <a href="Mission_to_Mars/index.html"
+                                            target="_blank">Mission to Mars</a>.
+                                        <br>
+                                        <br>
+                                        <strong>
+                                            The scraping script:
+                                        </strong>
+                                        <pre>
+                                        <code>
+from splinter import Browser
+from splinter.exceptions import ElementDoesNotExist
+from bs4 import BeautifulSoup as bs
+import time
+
+def scrape():
+    executable_path = {'executable_path': 'chromedriver.exe'}
+    browser = Browser('chrome', **executable_path, headless=True)
+
+    ## News title and teaser
+    url_news = 'https://mars.nasa.gov/news/'
+    browser.visit(url_news)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+    time.sleep(4)
+    news_title = soup.find('div', class_='content_title')
+    news_title = news_title.text
+    news_p = soup.find('div', class_='article_teaser_body')
+    news_p = news_p.text
+
+    ## JPL Mars Space Images - Featured Image
+    url_feat_img = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
+    browser.visit(url_feat_img)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    featured_image_url = 'https://www.jpl.nasa.gov' + soup.find('a', id='full_image')['data-fancybox-href']
+
+    ## Mars Weather
+    url_mars_weather = 'https://twitter.com/marswxreport?lang=en'
+    browser.visit(url_mars_weather)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    for tweet in soup.find_all('div', class_='js-tweet-text-container'):
+        if (tweet.p.text[:11] == 'InSight sol'):
+            mars_weather = tweet.p.text
+            break
+
+    ## Mars Facts
+    url_mars_facts = 'https://space-facts.com/mars/'
+    browser.visit(url_mars_facts)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    mars_facts_table = f"{soup.find('table', id='tablepress-p-mars-no-2')}"
+
+    ## Mars Hemispheres
+
+    url_mars_hemis = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
+    browser.visit(url_mars_hemis)
+
+    html = browser.html
+    soup = bs(html, 'html.parser')
+
+    hemisphere_image_urls = []
+    for link in soup.find_all('div', class_='description'):
+        hemisphere_image_urls.append({"title": link.h3.text[:-9]})
+        img_page = browser.visit('https://astrogeology.usgs.gov' + link.a['href'])
+        html = browser.html
+        img_soup = bs(html, 'html.parser')
+        for each in img_soup.find_all('a'):
+            if (each.text == 'Sample'):
+                img_url = each['href']
+                break
+        hemisphere_image_urls.append({"img_url": img_url})
+
+    data = {'news_title': news_title,
+            'news_p': news_p,
+            'featured_image_url': featured_image_url,
+            'mars_weather': mars_weather,
+            'mars_facts_table': f'{mars_facts_table}',
+            'hemisphere_image_urls': hemisphere_image_urls}
+    return data   
+                                        </code></pre>
+                                    </p>
+                                </div>
+
+                                <!-- <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis
+                                    viverra nibh cras pulvinar. Ac orci phasellus egestas tellus rutrum tellus
+                                    pellentesque. Varius morbi enim nunc faucibus a pellentesque sit. In pellentesque
+                                    massa placerat duis. Egestas maecenas pharetra convallis posuere morbi. Mattis nunc
+                                    sed blandit libero. Eu volutpat odio facilisis mauris sit amet. In est ante in nibh
+                                    mauris cursus mattis. Urna id volutpat lacus laoreet non curabitur. Nisl suscipit
+                                    adipiscing bibendum est ultricies integer quis. Ac placerat vestibulum lectus
+                                    mauris. Sed enim ut sem viverra aliquet eget sit amet. Nec ultrices dui sapien eget
+                                    mi proin sed libero. Morbi tincidunt augue interdum velit euismod. Nunc sed velit
+                                    dignissim sodales ut eu sem. Velit egestas dui id ornare arcu odio ut. Eget gravida
+                                    cum sociis natoque penatibus et magnis dis parturient. Pellentesque eu tincidunt
+                                    tortor aliquam nulla. Cursus turpis massa tincidunt dui ut.
+                                    <br>
+                                    <br>
+                                    Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Nibh venenatis cras sed
+                                    felis eget velit aliquet sagittis. At tellus at urna condimentum mattis. Nullam eget
+                                    felis eget nunc lobortis mattis. Facilisis gravida neque convallis a cras. Fames ac
+                                    turpis egestas maecenas pharetra. Et tortor at risus viverra adipiscing at in tellus
+                                    integer. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Dis
+                                    parturient montes nascetur ridiculus mus mauris. Blandit libero volutpat sed cras
+                                    ornare arcu. Mauris vitae ultricies leo integer malesuada. Eget velit aliquet
+                                    sagittis id consectetur. Sapien faucibus et molestie ac feugiat sed lectus
+                                    vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                    sagittis. Eu augue ut lectus arcu bibendum at varius vel pharetra. Ultrices dui
+                                    sapien eget mi. Ac felis donec et odio pellentesque diam volutpat. Fames ac turpis
+                                    egestas maecenas pharetra convallis posuere morbi.
+                                </p> -->
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-third" role="tabpanel"
+                                aria-labelledby="v-pills-third-tab">
+                                <p>
+                                    Lacus viverra vitae congue eu consequat ac felis donec et. Ipsum suspendisse
+                                    ultrices gravida dictum fusce ut placerat. Bibendum ut tristique et egestas. Tellus
+                                    rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Vitae aliquet
+                                    nec ullamcorper sit amet. Porta non pulvinar neque laoreet suspendisse interdum
+                                    consectetur libero. Donec pretium vulputate sapien nec sagittis. Vitae auctor eu
+                                    augue ut lectus arcu bibendum at varius. Lacus sed turpis tincidunt id aliquet risus
+                                    feugiat in ante. Mauris cursus mattis molestie a iaculis at erat.
+                                    <br>
+                                    <br>
+                                    Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Lorem mollis
+                                    aliquam ut porttitor leo a diam sollicitudin. Felis eget nunc lobortis mattis
+                                    aliquam faucibus purus. Sem et tortor consequat id porta nibh venenatis. Est
+                                    ultricies integer quis auctor elit sed. Pharetra massa massa ultricies mi quis
+                                    hendrerit dolor. Ac turpis egestas sed tempus urna. Egestas tellus rutrum tellus
+                                    pellentesque. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim.
+                                    Mauris ultrices eros in cursus turpis massa tincidunt dui. Integer enim neque
+                                    volutpat ac tincidunt. Mauris rhoncus aenean vel elit scelerisque mauris. Nulla
+                                    facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Aliquet nibh
+                                    praesent tristique magna sit amet purus. Tortor aliquam nulla facilisi cras
+                                    fermentum odio. Elementum sagittis vitae et leo duis. Semper feugiat nibh sed
+                                    pulvinar proin gravida hendrerit lectus a. Curabitur vitae nunc sed velit dignissim
+                                    sodales.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <p>
+
+                                    Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Metus dictum at
+                                    tempor commodo. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Cras
+                                    pulvinar mattis nunc sed blandit libero. Scelerisque felis imperdiet proin fermentum
+                                    leo vel orci porta non. Volutpat maecenas volutpat blandit aliquam etiam. Volutpat
+                                    consequat mauris nunc congue nisi vitae suscipit tellus. Duis convallis convallis
+                                    tellus id interdum velit laoreet. Neque laoreet suspendisse interdum consectetur
+                                    libero. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus.
+                                    Aliquet risus feugiat in ante metus dictum. Lectus magna fringilla urna porttitor
+                                    rhoncus. Ut consequat semper viverra nam libero justo. Sed id semper risus in
+                                    hendrerit gravida rutrum quisque.
+                                </p>
+                                <p>
+                                    Phasellus posuere ligula massa, vel pellentesque leo interdum in. Morbi nec varius
+                                    massa. Proin suscipit libero ac sem blandit, at gravida mi eleifend. Cras
+                                    pellentesque mi sed vulputate molestie. Maecenas vitae orci nisi. Fusce velit elit,
+                                    gravida sed diam in, ullamcorper laoreet nunc. Aliquam magna lectus, iaculis sit
+                                    amet nibh pharetra, elementum bibendum ante.
+                                    <br>
+                                    <br>
+                                    Sed vel fringilla sem. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis egestas. Fusce hendrerit porta urna, sed dictum sem
+                                    convallis ut. Vestibulum gravida, risus et feugiat eleifend, massa augue pharetra
+                                    ante, id molestie augue magna at nulla. Interdum et malesuada fames ac ante ipsum
+                                    primis in faucibus. Vivamus cursus elit turpis, at dictum urna pulvinar viverra.
+                                    Pellentesque ac purus dapibus, convallis massa sed, mattis elit. Vestibulum nec
+                                    congue est. Ut mattis lobortis nisi id malesuada. Aliquam at arcu eu augue elementum
+                                    pretium non viverra nunc. Curabitur sed eleifend arcu. Aenean non neque a lectus
+                                    dictum egestas. Ut in consectetur augue, quis tincidunt leo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="collapse col mx-auto" data-parent="body">
+                <div class="container">
+                    <div class="row">
+                        <p>
+                            If you are interested in collaborating or just talking, please do contact me.
+                            <br>
+                            I will get back to you shortly.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <form action="https://formspree.io/xqkanwzd" method="POST">
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="name">
+                                        Name
+                                    </label>
+                                    <input type="text" id="name" class="form-control mb-2" name="name"
+                                        placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="email">
+                                        Your email
+                                    </label>
+                                    <input type="text" id="email" class="form-control mb-2" name="_replyto"
+                                        placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="message">
+                                        Your message
+                                    </label>
+                                    <textarea id="message" name="message" class="form-control mb-2"
+                                        placeholder="Your message">
+                                        </textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer role="footer" class="p-1 font-weight-light">
+        <div id="about" class="row" data-parent="body">
+            <div class="col-8 mx-auto">
+                <hr>
+                <img id="self-portrait" class="float-left rounded m-2" height=289 width=192
+                    src="img/portrait_Bryan_Souza.JPG">
+                <h5>
+                    A little about me...
+                </h5>
+                <p>
+                    Aenean consectetur massa id diam eleifend, sit amet sodales sapien posuere. Ut eget venenatis
+                    lectus, non accumsan dolor. Etiam sed enim vestibulum, pretium massa in, posuere magna.
+                    Vestibulum
+                    congue diam velit, ut imperdiet est sodales sed. Vestibulum eget consectetur enim, posuere
+                    pellentesque neque. Praesent eget libero viverra, ultrices diam ac, feugiat massa. Morbi
+                    porttitor
+                    tempor nibh sed aliquet. Mauris tristique interdum enim vel consectetur. Suspendisse potenti.
+                    Curabitur sit amet consectetur nisl. Quisque gravida sollicitudin libero et commodo.
+                <div id="social" class="float-right">
+                    <a class="pr-4" target="_blank" href="https://www.linkedin.com/in/bryan-souza/"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                    <a class="pr-4" target="_blank" href="https://github.com/BryanSouza91"><i class="fab fa-github-alt fa-3x"></i></a>
+                    <a class="pr-4" target="_blank" href="https://www.kaggle.com/bryansouza"><i class="fab fa-kaggle fa-3x"></i></a>
+                    <a class="pr-4" target="_blank" href="https://join.slack.com/t/dataanalyticssactown/shared_invite/zt-d2enr6lh-CMlzEyVlWJziB20R_8AQZA"><i class="fab fa-slack-hash fa-3x"></i></a>
+                    <a class="pr-4" target="_blank" href="https://www.paypal.me/BryanSouza"><i class="fab fa-paypal fa-3x"></i></a>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <p class="text-center">
+                Bryan Souza &copy; 2020
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- Pure JavaScript -->
+    <script type="text/javascript" src="js/map-logic.js"></script>
+    <script type="text/javascript" src="js/page-logic.js"></script>
 </body>
 
 </html>
