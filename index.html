@@ -45,39 +45,41 @@
         </div>
     </header>
     <main role="main" class="m-2">
-        <div class="col-6 mx-auto">
-            <div id="covid-update" class="col-md-6 col-lg-6 alert alert-danger text-center" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="alert-heading">
-                    COVID-19 Update
-                </h4>
-                <p>
-                    Check out these links:<br>
-                    <a class="alert-link"
-                        href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
-                        target="_blank">
-                        US CDC "How to Protect yourself"
-                    </a>
-                    <br>
-                    <a class="alert-link" href="https://www.worldometers.info/coronavirus/" target="_blank">
-                        Latest World Coronavirus Numbers
-                    </a>
-                </p>
-                <hr>
-                <p class="mb-0">
-                    Stay
-                    <strong>
-                        SAFE
-                    </strong>
-                    by staying
-                    <strong>
-                        HOME!
-                    </strong>
-                    <br>
-                    This will keep our most vulnerable <br>from suffering from this disease.
-                </p>
+        <div class="row justify-content-center">
+            <div class="col-6 mx-auto">
+                <div id="covid-update" class="col-md-6 col-lg-6 alert alert-danger text-center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="alert-heading">
+                        COVID-19 Update
+                    </h4>
+                    <p>
+                        Check out these links:<br>
+                        <a class="alert-link"
+                            href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
+                            target="_blank">
+                            US CDC "How to Protect yourself"
+                        </a>
+                        <br>
+                        <a class="alert-link" href="https://www.worldometers.info/coronavirus/" target="_blank">
+                            Latest World Coronavirus Numbers
+                        </a>
+                    </p>
+                    <hr>
+                    <p class="mb-0">
+                        Stay
+                        <strong>
+                            SAFE
+                        </strong>
+                        by staying
+                        <strong>
+                            HOME!
+                        </strong>
+                        <br>
+                        This will keep our most vulnerable <br>from suffering from this disease.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="body" class="row mx-1">
@@ -98,8 +100,8 @@
                                 role="tab" aria-controls="v-pills-third" aria-selected="false">
                                 National Wildfires Visualized
                             </a>
-                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
-                                role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                            <a class="nav-link" id="v-pills-fourth-tab" data-toggle="pill" href="#v-pills-fourth"
+                                role="tab" aria-controls="v-pills-fourth" aria-selected="false">
                                 DengAI <span class="badge badge-success">Latest!</span>
                             </a>
                         </div>
@@ -286,97 +288,92 @@ def scrape():
                                         </code></pre>
                                     </p>
                                 </div>
-
-                                <!-- <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis
-                                    viverra nibh cras pulvinar. Ac orci phasellus egestas tellus rutrum tellus
-                                    pellentesque. Varius morbi enim nunc faucibus a pellentesque sit. In pellentesque
-                                    massa placerat duis. Egestas maecenas pharetra convallis posuere morbi. Mattis nunc
-                                    sed blandit libero. Eu volutpat odio facilisis mauris sit amet. In est ante in nibh
-                                    mauris cursus mattis. Urna id volutpat lacus laoreet non curabitur. Nisl suscipit
-                                    adipiscing bibendum est ultricies integer quis. Ac placerat vestibulum lectus
-                                    mauris. Sed enim ut sem viverra aliquet eget sit amet. Nec ultrices dui sapien eget
-                                    mi proin sed libero. Morbi tincidunt augue interdum velit euismod. Nunc sed velit
-                                    dignissim sodales ut eu sem. Velit egestas dui id ornare arcu odio ut. Eget gravida
-                                    cum sociis natoque penatibus et magnis dis parturient. Pellentesque eu tincidunt
-                                    tortor aliquam nulla. Cursus turpis massa tincidunt dui ut.
-                                    <br>
-                                    <br>
-                                    Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Nibh venenatis cras sed
-                                    felis eget velit aliquet sagittis. At tellus at urna condimentum mattis. Nullam eget
-                                    felis eget nunc lobortis mattis. Facilisis gravida neque convallis a cras. Fames ac
-                                    turpis egestas maecenas pharetra. Et tortor at risus viverra adipiscing at in tellus
-                                    integer. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Dis
-                                    parturient montes nascetur ridiculus mus mauris. Blandit libero volutpat sed cras
-                                    ornare arcu. Mauris vitae ultricies leo integer malesuada. Eget velit aliquet
-                                    sagittis id consectetur. Sapien faucibus et molestie ac feugiat sed lectus
-                                    vestibulum. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                                    sagittis. Eu augue ut lectus arcu bibendum at varius vel pharetra. Ultrices dui
-                                    sapien eget mi. Ac felis donec et odio pellentesque diam volutpat. Fames ac turpis
-                                    egestas maecenas pharetra convallis posuere morbi.
-                                </p> -->
                             </div>
                             <div class="tab-pane fade" id="v-pills-third" role="tabpanel"
                                 aria-labelledby="v-pills-third-tab">
-                                <p>
-                                    Lacus viverra vitae congue eu consequat ac felis donec et. Ipsum suspendisse
-                                    ultrices gravida dictum fusce ut placerat. Bibendum ut tristique et egestas. Tellus
-                                    rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Vitae aliquet
-                                    nec ullamcorper sit amet. Porta non pulvinar neque laoreet suspendisse interdum
-                                    consectetur libero. Donec pretium vulputate sapien nec sagittis. Vitae auctor eu
-                                    augue ut lectus arcu bibendum at varius. Lacus sed turpis tincidunt id aliquet risus
-                                    feugiat in ante. Mauris cursus mattis molestie a iaculis at erat.
-                                    <br>
-                                    <br>
-                                    Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Lorem mollis
-                                    aliquam ut porttitor leo a diam sollicitudin. Felis eget nunc lobortis mattis
-                                    aliquam faucibus purus. Sem et tortor consequat id porta nibh venenatis. Est
-                                    ultricies integer quis auctor elit sed. Pharetra massa massa ultricies mi quis
-                                    hendrerit dolor. Ac turpis egestas sed tempus urna. Egestas tellus rutrum tellus
-                                    pellentesque. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim.
-                                    Mauris ultrices eros in cursus turpis massa tincidunt dui. Integer enim neque
-                                    volutpat ac tincidunt. Mauris rhoncus aenean vel elit scelerisque mauris. Nulla
-                                    facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Aliquet nibh
-                                    praesent tristique magna sit amet purus. Tortor aliquam nulla facilisi cras
-                                    fermentum odio. Elementum sagittis vitae et leo duis. Semper feugiat nibh sed
-                                    pulvinar proin gravida hendrerit lectus a. Curabitur vitae nunc sed velit dignissim
-                                    sodales.
-                                </p>
+                                <div class="container">
+                                    <h4>
+                                        National Wildfires Visualized
+                                    </h4>
+                                    <p class="font-weight-bold">
+                                        A Data Analysis and Visualization Project
+                                    </p>
+                                    <p class="mb-0">Project Completion:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%">100%</div>
+                                    </div>
+                                    <p>Skills:
+                                        <span class="badge badge-success">Python</span>
+                                        <span class="badge badge-success">Flask</span>
+                                        <span class="badge badge-success">MongoDB</span>
+                                        <span class="badge badge-success">HTML</span>
+                                        <span class="badge badge-success">CSS</span>
+                                        <span class="badge badge-success">JavaScript</span>
+                                        <span class="badge badge-success">Bootstrap 4</span>
+                                        <span class="badge badge-success">Highcharts.js</span>
+                                        <span class="badge badge-success">API</span>
+                                        <span class="badge badge-success">JSON</span>
+                                    </p>
+                                    <p>
+                                        This project started with a large historical database composed of National
+                                        Wildfire records collected between 1992 and 2015, totaling <strong>1.88 Million
+                                            Wildfire incidents</strong>. MongoDB was the chosen database for the
+                                        project because of the speed and simplicity of use. After loading the data into
+                                        the database, a Flask server app was created to allow interactive access to the
+                                        data via the dashboard. The dashboard consisted of various charts produced with
+                                        Highcharts.js using JavaScript calls to the API serving the MongoDB data.
+                                        <br>
+                                        <br>
+                                        <strong class="h5">The project repository can be viewed here: <a
+                                                href="https://github.com/BryanSouza91/Project_2">National Wildfires
+                                                Visualized</a></strong>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">
-                                <p>
-
-                                    Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Metus dictum at
-                                    tempor commodo. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Cras
-                                    pulvinar mattis nunc sed blandit libero. Scelerisque felis imperdiet proin fermentum
-                                    leo vel orci porta non. Volutpat maecenas volutpat blandit aliquam etiam. Volutpat
-                                    consequat mauris nunc congue nisi vitae suscipit tellus. Duis convallis convallis
-                                    tellus id interdum velit laoreet. Neque laoreet suspendisse interdum consectetur
-                                    libero. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus.
-                                    Aliquet risus feugiat in ante metus dictum. Lectus magna fringilla urna porttitor
-                                    rhoncus. Ut consequat semper viverra nam libero justo. Sed id semper risus in
-                                    hendrerit gravida rutrum quisque.
-                                </p>
-                                <p>
-                                    Phasellus posuere ligula massa, vel pellentesque leo interdum in. Morbi nec varius
-                                    massa. Proin suscipit libero ac sem blandit, at gravida mi eleifend. Cras
-                                    pellentesque mi sed vulputate molestie. Maecenas vitae orci nisi. Fusce velit elit,
-                                    gravida sed diam in, ullamcorper laoreet nunc. Aliquam magna lectus, iaculis sit
-                                    amet nibh pharetra, elementum bibendum ante.
-                                    <br>
-                                    <br>
-                                    Sed vel fringilla sem. Pellentesque habitant morbi tristique senectus et netus et
-                                    malesuada fames ac turpis egestas. Fusce hendrerit porta urna, sed dictum sem
-                                    convallis ut. Vestibulum gravida, risus et feugiat eleifend, massa augue pharetra
-                                    ante, id molestie augue magna at nulla. Interdum et malesuada fames ac ante ipsum
-                                    primis in faucibus. Vivamus cursus elit turpis, at dictum urna pulvinar viverra.
-                                    Pellentesque ac purus dapibus, convallis massa sed, mattis elit. Vestibulum nec
-                                    congue est. Ut mattis lobortis nisi id malesuada. Aliquam at arcu eu augue elementum
-                                    pretium non viverra nunc. Curabitur sed eleifend arcu. Aenean non neque a lectus
-                                    dictum egestas. Ut in consectetur augue, quis tincidunt leo.
-                                </p>
+                            <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel"
+                                aria-labelledby="v-pills-fourth-tab">
+                                <div class="container">
+                                    <h4>
+                                        DengAI
+                                    </h4>
+                                    <p class="font-weight-bold">
+                                        Predict the spread of Mosquito-Borne diseases using Machine Learning
+                                    </p>
+                                    <p class="mb-0">Project Completion:</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 100%">100%</div>
+                                    </div>
+                                    <p>Skills:
+                                        <span class="badge badge-success">Python</span>
+                                        <span class="badge badge-success">Google TensorFlow</span>
+                                        <span class="badge badge-success">Facebook Prophet</span>
+                                        <span class="badge badge-success">Tableau</span>
+                                        <span class="badge badge-success">HTML</span>
+                                        <span class="badge badge-success">CSS</span>
+                                        <span class="badge badge-success">JavaScript</span>
+                                        <span class="badge badge-success">Bootstrap 4</span>
+                                        <span class="badge badge-success">Highcharts.js</span>
+                                    </p>
+                                    <p>
+                                        This project aims to predict local epidemics of dengue fever using environmental
+                                        data collected by
+                                        U.S. Federal Government agencies. Using historical data for San Juan, Puerto
+                                        Rico and Iquitos, Peru,
+                                        predictions were generated with the machine learning tools Google TensorFlow and
+                                        Facebook Prophet.
+                                        Raw data is available through
+                                        <a
+                                            href="https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/">DrivenData</a>.
+                                        <br>
+                                        <br>
+                                        <strong class="h5">The project can be viewed here: <a
+                                                href="https://ramneekc.github.io/DengAI/">DengAI</a></strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -440,16 +437,11 @@ def scrape():
                     A little about me...
                 </h5>
                 <p>
-                    Bryan Souza is a Data Specialist with an expertise in Real Estate. Bryan
-
-                    Aenean consectetur massa id diam eleifend, sit amet sodales sapien posuere. Ut eget venenatis
-                    lectus, non accumsan dolor. Etiam sed enim vestibulum, pretium massa in, posuere magna.
-                    Vestibulum
-                    congue diam velit, ut imperdiet est sodales sed. Vestibulum eget consectetur enim, posuere
-                    pellentesque neque. Praesent eget libero viverra, ultrices diam ac, feugiat massa. Morbi
-                    porttitor
-                    tempor nibh sed aliquet. Mauris tristique interdum enim vel consectetur. Suspendisse potenti.
-                    Curabitur sit amet consectetur nisl. Quisque gravida sollicitudin libero et commodo.
+                    Bryan Souza is a Data Specialist with an expertise in Real Estate. Bryan earned a Data Analytics and
+                    Visualization certificate from the UC Davis College of Continuing and Professional Education. Python
+                    came easy as he taught himself using the popular Pandas Data Analytics package. These new skills
+                    complement Bryan's hunger and determination for finding new information and creating success through
+                    positive action. <a class="h5" href="#contact">Get in touch.</a>
                     <div id="social" class="float-right">
                         <a class="pr-4" target="_blank" href="https://www.linkedin.com/in/bryan-souza/"><i
                                 class="fab fa-linkedin-in fa-3x"></i></a>
