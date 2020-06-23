@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -29,12 +27,10 @@
             </div>
             <div id="nav" class="px-1">
                 <nav class="nav nav-pills justify-content-center">
-                    <a class="nav-link" href="#projects" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="projects">
+                    <a class="nav-link" href="#projects" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="projects">
                         Projects <span class="badge badge-success">5</span>
                     </a>
-                    <a class="nav-link" href="#contact" data-toggle="collapse" role="button" aria-expanded="false"
-                        aria-controls="contact">
+                    <a class="nav-link" href="#contact" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="contact">
                         Contact
                     </a>
                     <a class="nav-link" href="#about" role="button">
@@ -45,84 +41,38 @@
         </div>
     </header>
     <main role="main" class="m-2">
-        <div class="row justify-content-center">
-            <div class="col-6 mx-auto">
-                <div id="covid-update" class="col-md-6 col-lg-6 alert alert-danger text-center" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="alert-heading">
-                        COVID-19 Update
-                    </h4>
-                    <p>
-                        Check out these links:<br>
-                        <a class="alert-link"
-                            href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"
-                            target="_blank">
-                            US CDC "How to Protect yourself"
-                        </a>
-                        <br>
-                        <a class="alert-link" href="https://www.worldometers.info/coronavirus/" target="_blank">
-                            Latest World Coronavirus Numbers
-                        </a>
-                    </p>
-                    <hr>
-                    <p class="mb-0">
-                        Stay
-                        <strong>
-                            SAFE
-                        </strong>
-                        by staying
-                        <strong>
-                            HOME!
-                        </strong>
-                        <br>
-                        This will keep our most vulnerable <br>from suffering from this disease.
-                    </p>
-                </div>
-            </div>
-        </div>
         <div id="body" class="row mx-1">
             <div id="projects" class="collapse" data-parent="body">
                 <div class="row">
                     <div class="col col-md-3">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-first-tab" data-toggle="pill" href="#v-pills-first"
-                                role="tab" aria-controls="v-pills-first" aria-selected="true">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-first-tab" data-toggle="pill" href="#v-pills-first" role="tab" aria-controls="v-pills-first" aria-selected="true">
                                 USGS Earthquake Map
                             </a>
-                            <a class="nav-link" id="v-pills-second-tab" data-toggle="pill" href="#v-pills-second"
-                                role="tab" aria-controls="v-pills-second" aria-selected="false">
+                            <a class="nav-link" id="v-pills-second-tab" data-toggle="pill" href="#v-pills-second" role="tab" aria-controls="v-pills-second" aria-selected="false">
                                 Mars Data-Mining
                             </a>
-                            <a class="nav-link" id="v-pills-third-tab" data-toggle="pill" href="#v-pills-third"
-                                role="tab" aria-controls="v-pills-third" aria-selected="false">
+                            <a class="nav-link" id="v-pills-third-tab" data-toggle="pill" href="#v-pills-third" role="tab" aria-controls="v-pills-third" aria-selected="false">
                                 National Wildfires Visualized
                             </a>
-                            <a class="nav-link" id="v-pills-fourth-tab" data-toggle="pill" href="#v-pills-fourth"
-                                role="tab" aria-controls="v-pills-fourth" aria-selected="false">
+                            <a class="nav-link" id="v-pills-fourth-tab" data-toggle="pill" href="#v-pills-fourth" role="tab" aria-controls="v-pills-fourth" aria-selected="false">
                                 Web-Scraping for 48,000 emails
                             </a>
-                            <a class="nav-link" id="v-pills-fifth-tab" data-toggle="pill" href="#v-pills-fifth"
-                                role="tab" aria-controls="v-pills-fifth" aria-selected="false">
+                            <a class="nav-link" id="v-pills-fifth-tab" data-toggle="pill" href="#v-pills-fifth" role="tab" aria-controls="v-pills-fifth" aria-selected="false">
                                 DengAI <span class="badge badge-success">Latest!</span>
                             </a>
                         </div>
                     </div>
                     <div class="col col-md-9">
                         <div class="tab-content flex-column" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel"
-                                aria-labelledby="v-pills-first-tab">
+                            <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
                                 <div class="container">
                                     <h4>
                                         USGS Earthquake Map
                                     </h4>
                                     <p class="mb-0">Project Completion:</p>
                                     <div class="progress">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%">100%</div>
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
                                     </div>
                                     <p>Skills:
                                         <span class="badge badge-success">Leaflet.js</span>
@@ -134,82 +84,61 @@
                                         <span class="badge badge-success">GEOJSON</span>
                                     </p>
                                     <p>
-                                        This map shows the weekly Earthquakes recorded by
-                                        the United States Geological Society. The data is real-time and updated every
-                                        minute. from the USGS Earthquake Hazards Program. I used the Leaflet.js package
-                                        to build the map and place the markers. I decided to use <em>Exclamation
-                                            Triangles</em> from
-                                        the FontAwesome 5 library. These markers were then color-coded based on the
-                                        earthquake's magnitude.
+                                        This map shows the weekly Earthquakes recorded by the United States Geological Society. The data is real-time and updated every minute. from the USGS Earthquake Hazards Program. I used the Leaflet.js package to build the map and place the markers. I decided
+                                        to use <em>Exclamation
+                                            Triangles</em> from the FontAwesome 5 library. These markers were then color-coded based on the earthquake's magnitude.
                                         <div class="col-9">
                                             <ul>
-                                                <li>Less than or equal to 1.0: <span class="float-right"
-                                                        style="color: yellow;">Yellow</span></li>
-                                                <li>Greater than 1.0 and less than or equal to 2.5: <span
-                                                        class="float-right" style="color: orange;">Orange</span></li>
-                                                <li>Greater than 2.5 and less than or equal to 4.5: <span
-                                                        class="float-right" style="color: orangered;">Orange-Red</span>
-                                                </li>
-                                                <li>Greater than 4.5: <span class="float-right"
-                                                        style="color: red;">Red</span></li>
+                                                <li>Less than or equal to 1.0: <span class="float-right" style="color: yellow;">Yellow</span></li>
+                                                <li>Greater than 1.0 and less than or equal to 2.5: <span class="float-right" style="color: orange;">Orange</span></li>
+                                                <li>Greater than 2.5 and less than or equal to 4.5: <span class="float-right" style="color: orangered;">Orange-Red</span></li>
+                                                <li>Greater than 4.5: <span class="float-right" style="color: red;">Red</span></li>
                                             </ul>
                                         </div>
-                                        <br>
-                                        The API is available for access here: <a
-                                            href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
-                                            target="_blank">USGS Earthquake API</a>
+                                        <br> The API is available for access here: <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">USGS Earthquake API</a>
                                     </p>
                                     <!-- The quake map div -->
-                                    <div id="quake-map" class="border border-primary rounded mx-auto"></div>
-                                    <!-- <div id="quake-table" class="border border-primary rounded mx-auto"></div> -->
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-second" role="tabpanel"
-                                aria-labelledby="v-pills-second-tab">
-                                <div class="container">
-                                    <h4>
-                                        Mission to Mars
-                                    </h4>
-                                    <p class="font-weight-bold">
-                                        A Web Scraping Project
-                                    </p>
-                                    <p class="mb-0">Project Completion:</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%">100%</div>
+                                    <div id="quake-map" class="border border-primary rounded mx-auto">
+                                        <div>
+                                            <img src="img/quakes.png" class="img-fluid" alt="Map of world, marked with the earthquakes from the last week.">
+                                        </div>
+                                        <!-- <div id="quake-table" class="border border-primary rounded mx-auto"></div> -->
                                     </div>
-                                    <p>Skills:
-                                        <span class="badge badge-success">Python</span>
-                                        <span class="badge badge-success">Flask</span>
-                                        <span class="badge badge-success">HTML</span>
-                                        <span class="badge badge-success">CSS</span>
-                                        <span class="badge badge-success">JavaScript</span>
-                                        <span class="badge badge-success">Bootstrap 4</span>
-                                        <span class="badge badge-success">API</span>
-                                        <span class="badge badge-success">JSON</span>
-                                    </p>
-                                    <p>
-                                        I created a web page, using basic Bootstrap 4, that displayed various data and
-                                        information about the planet Mars, such as weather from tweets and satellite
-                                        images.
-                                        This data and information was scraped and mined from various sources on the
-                                        internet. Python allowed me to quickly build a script to get the job done. I
-                                        used the python packages Splinter and Beautiful Soup to access the webpages,
-                                        then navigate them by clicking links and selecting HTML elements before
-                                        extracting the HTML or image data I was going to use. This data was then injeted
-                                        into the webpage I built using the Flask web development package to display this
-                                        aggregate information in an easy to digest manner.
-                                        <br>
-                                        <br>
-                                        The webpage can be viewed here: <a href="Mission_to_Mars/index.html"
-                                            target="_blank">Mission to Mars</a>.
-                                        <br>
-                                        <br>
-                                        <strong>
-                                            The scraping script:
-                                        </strong>
-                                        <pre>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-second" role="tabpanel" aria-labelledby="v-pills-second-tab">
+                                    <div class="container">
+                                        <h4>
+                                            Mission to Mars
+                                        </h4>
+                                        <p class="font-weight-bold">
+                                            A Web Scraping Project
+                                        </p>
+                                        <p class="mb-0">Project Completion:</p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                        </div>
+                                        <p>Skills:
+                                            <span class="badge badge-success">Python</span>
+                                            <span class="badge badge-success">Flask</span>
+                                            <span class="badge badge-success">HTML</span>
+                                            <span class="badge badge-success">CSS</span>
+                                            <span class="badge badge-success">JavaScript</span>
+                                            <span class="badge badge-success">Bootstrap 4</span>
+                                            <span class="badge badge-success">API</span>
+                                            <span class="badge badge-success">JSON</span>
+                                        </p>
+                                        <p>
+                                            I created a web page, using basic Bootstrap 4, that displayed various data and information about the planet Mars, such as weather from tweets and satellite images. This data and information was scraped and mined from various sources on the internet. Python
+                                            allowed me to quickly build a script to get the job done. I used the python packages Splinter and Beautiful Soup to access the webpages, then navigate them by clicking links and selecting HTML elements before
+                                            extracting the HTML or image data I was going to use. This data was then injeted into the webpage I built using the Flask web development package to display this aggregate information in an easy to digest manner.
+                                            <br>
+                                            <br> The webpage can be viewed here: <a href="Mission_to_Mars/index.html" target="_blank">Mission to Mars</a>.
+                                            <br>
+                                            <br>
+                                            <strong>
+                                                The scraping script:
+                                            </strong>
+                                            <pre>
                                         <code>
 from splinter import Browser
 from splinter.exceptions import ElementDoesNotExist
@@ -290,205 +219,174 @@ def scrape():
             'hemisphere_image_urls': hemisphere_image_urls}
     return data   
                                         </code></pre>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-third" role="tabpanel"
-                                aria-labelledby="v-pills-third-tab">
-                                <div class="container">
-                                    <h4>
-                                        National Wildfires Visualized
-                                    </h4>
-                                    <p class="font-weight-bold">
-                                        A Data Analysis and Visualization Project
-                                    </p>
-                                    <p class="mb-0">Project Completion:</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%">100%</div>
+                                        </p>
                                     </div>
-                                    <p>Skills:
-                                        <span class="badge badge-success">Python</span>
-                                        <span class="badge badge-success">Flask</span>
-                                        <span class="badge badge-success">MongoDB</span>
-                                        <span class="badge badge-success">HTML</span>
-                                        <span class="badge badge-success">CSS</span>
-                                        <span class="badge badge-success">JavaScript</span>
-                                        <span class="badge badge-success">Bootstrap 4</span>
-                                        <span class="badge badge-success">Highcharts.js</span>
-                                        <span class="badge badge-success">API</span>
-                                        <span class="badge badge-success">JSON</span>
-                                    </p>
-                                    <p>
-                                        This project started with a large historical database composed of National
-                                        Wildfire records collected between 1992 and 2015, totaling <strong>1.88 Million
-                                            Wildfire incidents</strong>. MongoDB was the chosen database for the
-                                        project because of the speed and simplicity of use. After loading the data into
-                                        the database, a Flask server app was created to allow interactive access to the
-                                        data via the dashboard. The dashboard consisted of various charts produced with
-                                        Highcharts.js using JavaScript calls to the API serving the MongoDB data.
-                                        <br>
-                                        <br>
-                                        The project repository can be viewed here: <a
-                                            href="https://github.com/BryanSouza91/Project_2">National Wildfires
-                                            Visualized</a>
-                                    </p>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel"
-                                aria-labelledby="v-pills-fourth-tab">
-                                <div class="container">
-                                    <h4>
-                                        Web-Scraping for 48,000 emails
-                                    </h4>
-                                    <p class="font-weight-bold">
-                                        Need emails for a survey? I can scrape them...
-                                    </p>
-                                    <p class="mb-0">Project Completion:</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%">100%</div>
+                                <div class="tab-pane fade" id="v-pills-third" role="tabpanel" aria-labelledby="v-pills-third-tab">
+                                    <div class="container">
+                                        <h4>
+                                            National Wildfires Visualized
+                                        </h4>
+                                        <p class="font-weight-bold">
+                                            A Data Analysis and Visualization Project
+                                        </p>
+                                        <p class="mb-0">Project Completion:</p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                        </div>
+                                        <p>Skills:
+                                            <span class="badge badge-success">Python</span>
+                                            <span class="badge badge-success">Flask</span>
+                                            <span class="badge badge-success">MongoDB</span>
+                                            <span class="badge badge-success">HTML</span>
+                                            <span class="badge badge-success">CSS</span>
+                                            <span class="badge badge-success">JavaScript</span>
+                                            <span class="badge badge-success">Bootstrap 4</span>
+                                            <span class="badge badge-success">Highcharts.js</span>
+                                            <span class="badge badge-success">API</span>
+                                            <span class="badge badge-success">JSON</span>
+                                        </p>
+                                        <p>
+                                            This project started with a large historical database composed of National Wildfire records collected between 1992 and 2015, totaling <strong>1.88
+                                                Million
+                                                Wildfire incidents</strong>. MongoDB was the chosen database for the project because of the speed and simplicity of use. After loading the data into the database, a Flask server app was created to allow
+                                            interactive access to the data via the dashboard. The dashboard consisted of various charts produced with Highcharts.js using JavaScript calls to the API serving the MongoDB data.
+                                            <br>
+                                            <br> The project repository can be viewed here: <a href="https://github.com/BryanSouza91/Project_2">National Wildfires
+                                                Visualized</a>
+                                        </p>
                                     </div>
-                                    <p>Skills:
-                                        <span class="badge badge-success">Python</span>
-                                        <span class="badge badge-success">Splinter</span>
-                                        <span class="badge badge-success">MongoDB</span>
-                                        <span class="badge badge-success">Jupyter Lab</span>
-                                        <span class="badge badge-success">HTML</span>
-                                        <span class="badge badge-success">CSS</span>
-                                        <span class="badge badge-success">JavaScript</span>
-                                    </p>
-                                    <p>
-                                        Scraped <strong>48,000</strong> email adresses from 20 websites.
-                                    </p>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel"
-                                aria-labelledby="v-pills-fifth-tab">
-                                <div class="container">
-                                    <h4>
-                                        DengAI
-                                    </h4>
-                                    <p class="font-weight-bold">
-                                        Predict the spread of Mosquito-Borne diseases using Machine Learning
-                                    </p>
-                                    <p class="mb-0">Project Completion:</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                            style="width: 100%">100%</div>
+                                <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel" aria-labelledby="v-pills-fourth-tab">
+                                    <div class="container">
+                                        <h4>
+                                            Web-Scraping for 48,000 emails
+                                        </h4>
+                                        <p class="font-weight-bold">
+                                            Need emails for a survey? I can scrape them...
+                                        </p>
+                                        <p class="mb-0">Project Completion:</p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                        </div>
+                                        <p>Skills:
+                                            <span class="badge badge-success">Python</span>
+                                            <span class="badge badge-success">Splinter</span>
+                                            <span class="badge badge-success">MongoDB</span>
+                                            <span class="badge badge-success">Jupyter Lab</span>
+                                            <span class="badge badge-success">HTML</span>
+                                            <span class="badge badge-success">CSS</span>
+                                            <span class="badge badge-success">JavaScript</span>
+                                        </p>
+                                        <p>
+                                            Scraped <strong>48,000</strong> email adresses from 20 websites.
+                                        </p>
                                     </div>
-                                    <p>Skills:
-                                        <span class="badge badge-success">Python</span>
-                                        <span class="badge badge-success">Google TensorFlow</span>
-                                        <span class="badge badge-success">Facebook Prophet</span>
-                                        <span class="badge badge-success">Tableau</span>
-                                        <span class="badge badge-success">HTML</span>
-                                        <span class="badge badge-success">CSS</span>
-                                        <span class="badge badge-success">JavaScript</span>
-                                        <span class="badge badge-success">Bootstrap 4</span>
-                                        <span class="badge badge-success">Highcharts.js</span>
-                                    </p>
-                                    <p>
-                                        This project aims to predict local epidemics of dengue fever using environmental
-                                        data collected by
-                                        U.S. Federal Government agencies. Using historical data for San Juan, Puerto
-                                        Rico and Iquitos, Peru,
-                                        predictions were generated with the machine learning tools Google TensorFlow and
-                                        Facebook Prophet.
-                                        <br>
-                                        <br>
-                                        Raw data is available through
-                                        <a
-                                            href="https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/">DrivenData</a>.
-
-                                        The project can be viewed here: <a
-                                            href="https://ramneekc.github.io/DengAI/">DengAI</a>
-                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">
+                                    <div class="container">
+                                        <h4>
+                                            DengAI
+                                        </h4>
+                                        <p class="font-weight-bold">
+                                            Predict the spread of Mosquito-Borne diseases using Machine Learning
+                                        </p>
+                                        <p class="mb-0">Project Completion:</p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                                        </div>
+                                        <p>Skills:
+                                            <span class="badge badge-success">Python</span>
+                                            <span class="badge badge-success">Google TensorFlow</span>
+                                            <span class="badge badge-success">Facebook Prophet</span>
+                                            <span class="badge badge-success">Tableau</span>
+                                            <span class="badge badge-success">HTML</span>
+                                            <span class="badge badge-success">CSS</span>
+                                            <span class="badge badge-success">JavaScript</span>
+                                            <span class="badge badge-success">Bootstrap 4</span>
+                                            <span class="badge badge-success">Highcharts.js</span>
+                                        </p>
+                                        <p>
+                                            This project aims to predict local epidemics of dengue fever using environmental data collected by U.S. Federal Government agencies. Using historical data for San Juan, Puerto Rico and Iquitos, Peru, predictions were generated with the machine learning
+                                            tools Google TensorFlow and Facebook Prophet.
+                                            <br>
+                                            <br> Raw data is available through
+                                            <a href="https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/">DrivenData</a>. The project can be viewed here: <a href="https://ramneekc.github.io/DengAI/">DengAI</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="contact" class="collapse col mx-auto" data-parent="body">
-                <div class="container">
-                    <div class="row">
-                        <p>
-                            If you are interested in collaborating or just talking, please do contact me.
-                            <br>
-                            I will get back to you shortly.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <form action="https://formspree.io/xqkanwzd" method="POST">
-                            <div class="form-row">
-                                <div class="col-auto">
-                                    <label class="sr-only" for="name">
-                                        Name
-                                    </label>
-                                    <input type="text" id="name" class="form-control mb-2" name="name"
-                                        placeholder="Name">
+                <div id="contact" class="collapse col mx-auto" data-parent="body">
+                    <div class="container">
+                        <div class="row">
+                            <p>
+                                If you are interested in collaborating or just talking, please do contact me.
+                                <br> I will get back to you shortly.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <form action="https://formspree.io/xqkanwzd" method="POST">
+                                <div class="form-row">
+                                    <div class="col-auto">
+                                        <label class="sr-only" for="name">
+                                            Name
+                                        </label>
+                                        <input type="text" id="name" class="form-control mb-2" name="name" placeholder="Name">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-auto">
-                                    <label class="sr-only" for="email">
-                                        Your email
-                                    </label>
-                                    <input type="text" id="email" class="form-control mb-2" name="_replyto"
-                                        placeholder="Your email">
+                                <div class="form-row">
+                                    <div class="col-auto">
+                                        <label class="sr-only" for="email">
+                                            Your email
+                                        </label>
+                                        <input type="text" id="email" class="form-control mb-2" name="_replyto" placeholder="Your email">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-auto">
-                                    <label class="sr-only" for="message">
-                                        Your message
-                                    </label>
-                                    <textarea id="message" name="message" class="form-control mb-2"
-                                        placeholder="Your message">
+                                <div class="form-row">
+                                    <div class="col-auto">
+                                        <label class="sr-only" for="message">
+                                            Your message
+                                        </label>
+                                        <textarea id="message" name="message" class="form-control mb-2" placeholder="Your message">
                                         </textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">
-                                Send
-                            </button>
-                        </form>
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">
+                                    Send
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
     <footer role="footer" class="p-1 font-weight-light">
         <div id="about" class="row" data-parent="body">
             <div class="col-8 mx-auto">
                 <hr>
-                <img id="self-portrait" class="float-left rounded m-2" height=289 width=192
-                    src="img/portrait_Bryan_Souza.JPG">
+                <img id="self-portrait" class="float-left rounded m-2" height=289 width=192 src="img/portrait_Bryan_Souza.JPG">
                 <h5>
                     A little about me...
                 </h5>
                 <p>
-                    Bryan Souza is a Data Specialist with an expertise in Real Estate. Bryan earned a Data Analytics and
-                    Visualization certificate from the UC Davis College of Continuing and Professional Education. Python
-                    came easy as he taught himself using the popular Pandas Data Analytics package. These new skills
-                    complement Bryan's hunger and determination for finding new information and creating success through
-                    positive action. <a class="h5" href="#contact" data-toggle="collapse" role="button"
-                        aria-expanded="false" aria-controls="contact">Get in touch.</a>
+                    Bryan Souza is a Data Specialist with an expertise in Real Estate. Bryan earned a Data Analytics and Visualization certificate from the UC Davis College of Continuing and Professional Education. Python came easy as he taught himself using the popular
+                    Pandas Data Analytics package. These new skills complement Bryan's hunger and determination for finding new information and creating success through positive action. <a class="h5" href="#contact" data-toggle="collapse"
+                        role="button" aria-expanded="false" aria-controls="contact">Get in
+                        touch.</a>
                     <div id="social" class="float-right">
                         <a class="pr-4" target="_blank" href="https://www.linkedin.com/in/bryan-souza/"><i
-                                class="fab fa-linkedin-in fa-3x"></i></a>
+                            class="fab fa-linkedin-in fa-3x"></i></a>
                         <a class="pr-4" target="_blank" href="https://github.com/BryanSouza91"><i
-                                class="fab fa-github-alt fa-3x"></i></a>
+                            class="fab fa-github-alt fa-3x"></i></a>
                         <a class="pr-4" target="_blank" href="https://www.kaggle.com/bryansouza"><i
-                                class="fab fa-kaggle fa-3x"></i></a>
-                        <a class="pr-4" target="_blank"
-                            href="https://join.slack.com/t/dataanalyticssactown/shared_invite/zt-d2enr6lh-CMlzEyVlWJziB20R_8AQZA"><i
-                                class="fab fa-slack-hash fa-3x"></i></a>
+                            class="fab fa-kaggle fa-3x"></i></a>
+                        <a class="pr-4" target="_blank" href="https://join.slack.com/t/dataanalyticssactown/shared_invite/zt-d2enr6lh-CMlzEyVlWJziB20R_8AQZA"><i
+                            class="fab fa-slack-hash fa-3x"></i></a>
                         <a class="pr-4" target="_blank" href="https://www.paypal.me/BryanSouza"><i
-                                class="fab fa-paypal fa-3x"></i></a>
+                            class="fab fa-paypal fa-3x"></i></a>
                     </div>
                 </p>
             </div>
@@ -499,20 +397,11 @@ def scrape():
             </p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    <!-- Pure JavaScript -->
-    <script type="text/javascript" src="js/map-logic.js"></script>
+    <!-- JavaScript -->
     <script type="text/javascript" src="js/page-logic.js"></script>
 </body>
 
