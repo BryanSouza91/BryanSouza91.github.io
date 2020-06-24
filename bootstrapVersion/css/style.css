@@ -1,0 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+#quake-map {
+    width: 70vw;
+    height: 60vh;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+}
+.popup {
+    text-align: center;
+}
+
+.myDivIcon {
+    text-align: center;
+    /* Horizontally center the text (icon) */
+    line-height: 20px;
+    /* Vertically center the text (icon) */
+    text-shadow: black 1px 1px 2px;
+}

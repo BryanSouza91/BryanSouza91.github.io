@@ -1,21 +1,18 @@
 body {
-    overflow-x: hidden;
-}
-#quake-map {
-    width: 70vw;
-    height: 60vh;
-    min-height: 100%;
-    min-width: 100%;
-    display: block;
-}
-.popup {
-    text-align: center;
+    font-family: 'Corben', cursive;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.myDivIcon {
-    text-align: center;
-    /* Horizontally center the text (icon) */
-    line-height: 20px;
-    /* Vertically center the text (icon) */
-    text-shadow: black 1px 1px 2px;
+main {
+    flex: 1 0 auto;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
+
+pre {
+    white-space: pre-wrap;
 }
