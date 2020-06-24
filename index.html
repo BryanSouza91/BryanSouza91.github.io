@@ -123,37 +123,109 @@
                     </li>
                     <li>
                         <div class="collapsible-header"><i class="material-icons orange-text">whatshot</i>National Wildfires Visualized</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons orange-text">trending_upward</i>DengAI</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons orange-text">web</i>Mission to Mars</div>
                         <div class="collapsible-body">
                             <div class="row">
                                 <p>Skills:
                                     <span class="badge orange-text">Python</span>
                                     <span class="badge orange-text">Flask</span>
+                                    <span class="badge orange-text">MongoDB</span>
                                     <span class="badge orange-text">HTML</span>
                                     <span class="badge orange-text">CSS</span>
                                     <span class="badge orange-text">JavaScript</span>
                                     <span class="badge orange-text">Bootstrap 4</span>
+                                    <span class="badge orange-text">Highcharts.js</span>
                                     <span class="badge orange-text">API</span>
                                     <span class="badge orange-text">JSON</span>
                                 </p>
                             </div>
                             <div class="row">
                                 <p>
+                                    This project started with a large historical database composed of National Wildfire records collected between 1992 and 2015, totaling <strong>1.88
+                                    Million
+                                    Wildfire incidents</strong>. MongoDB was the chosen database for the project because of the speed and simplicity of use. After loading the data into the database, a Flask server app was created to allow interactive
+                                    access to the data via the dashboard. The dashboard consisted of various charts produced with Highcharts.js using JavaScript calls to the API serving the MongoDB data.
+                                    <br>
+                                    <br> The project repository can be viewed here: <a class="orange-text" href="https://github.com/BryanSouza91/Project_2">National Wildfires
+                                    Visualized</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons orange-text">trending_upward</i>DengAI</div>
+                        <div class="collapsible-body">
+                            <div class="row">
+                                <p>Skills:
+                                    <span class="badge orange-text">Python</span>
+                                    <span class="badge orange-text">TensorFlow</span>
+                                    <span class="badge orange-text">HTML</span>
+                                    <span class="badge orange-text">CSS</span>
+                                    <span class="badge orange-text">JavaScript</span>
+                                    <span class="badge orange-text">API</span>
+                                    <span class="badge orange-text">CSV</span>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    This project aims to predict local epidemics of dengue fever using environmental data collected by U.S. Federal Government agencies. Using historical data for San Juan, Puerto Rico and Iquitos, Peru, predictions were generated with the machine learning
+                                    tools Google TensorFlow and Facebook Prophet. Raw data is available <a class="orange-text" href="https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/">DrivenData</a>
+                                </p>
+                                <p>
+                                    Tools our team used:
+                                    <ul>
+                                        <li>Tiaga Kanban for workflow management</li>
+                                        <li>Python with TensorFlow and Facebook Prophet machine learning modules </li>
+                                        <li>Jupyter and Colab notebooks for machine learning exploration </li>
+                                        <li>Javascript, HTML, and CSS for webpage design </li>
+                                        <li>Tableau and Highcharts for visualizations</li>
+                                    </ul>
+                                    <p>
+                                        Our goal was to predict the number of dengue cases each week in each location based on environmental variables describing changes in temperature, precipitation, and vegetation. Predictions were generated based on a dataset with weekly cases from 1991
+                                        to 2007 for San Juan and 2001 to 2009 for Iquitos. Two prediction models were used. Facebook Prophet forecasts time series data based on an additive model where non-linear trends are fit with yearly, weekly, and
+                                        daily seasonality, plus holiday effects. TensorFlow is a Deep Learning library developed by Google, we developed a simple Long Short-Term Memory(LSTM) model.
+                                    </p>
+                                    <img class="responsive-img materialboxed" src="img/sj_predict.jpeg"><img class="responsive-img materialboxed" src="img/iq_predict.jpeg ">
+                                    <p>
+                                        As seen in both of the above graphs plotting the time series predictions over the training and testing true values, both of the machine learning models aren’t able to accurately predict large spikes in Dengue Fever. While neither of these models are perfectly
+                                        tuned, fine tuning a machine learning model takes quite a bit of hypothesis testing and therefore time, there seems to be an obvious need to bring in more related data in order to identify potential causal factors
+                                        for the big spikes in the number of infected individuals per week. Even though correlation coefficient isn’t a direct measurement of a feature variables impact on a target variables outcome, it still gives a good
+                                        indication of features that can help a machine learning model predict more accurately. San Juan’s environmental data features have a correlation coefficient range of -0.12 to 0.19 with respect to the number of cases
+                                        per week, and Iquitos’s range is -0.13 to 0.23. This shows a relationship between environmental factors and the number of Dengue cases per week exists, but none of the variables have an extremely strong proportional
+                                        or inverse relationship to explain the large fluctuations in the trend.
+                                    </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="material-icons orange-text ">email</i>Web Scraping for 48,000 Emails</div>
+                        <div class="collapsible-body "><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header "><i class="material-icons orange-text ">web</i>Mission to Mars</div>
+                        <div class="collapsible-body ">
+                            <div class="row ">
+                                <p>Skills:
+                                    <span class="badge orange-text ">Python</span>
+                                    <span class="badge orange-text ">Flask</span>
+                                    <span class="badge orange-text ">HTML</span>
+                                    <span class="badge orange-text ">CSS</span>
+                                    <span class="badge orange-text ">JavaScript</span>
+                                    <span class="badge orange-text ">Bootstrap 4</span>
+                                    <span class="badge orange-text ">API</span>
+                                    <span class="badge orange-text ">JSON</span>
+                                </p>
+                            </div>
+                            <div class="row ">
+                                <p>
                                     I created a web page, using basic Bootstrap 4, that displayed various data and information about the planet Mars, such as weather from tweets and satellite images. This data and information was scraped and mined from various sources on the internet. Python
                                     allowed me to quickly build a script to get the job done. I used the python packages Splinter and Beautiful Soup to access the webpages, then navigate them by clicking links and selecting HTML elements before extracting
                                     the HTML or image data I was going to use. This data was then injeted into the webpage I built using the Flask web development package to display this aggregate information in an easy to digest manner.
                                     <br>
-                                    <br> The webpage can be viewed here: <a class="orange-text" href="Mission_to_Mars/index.html" target="_blank">Mission to Mars</a>
+                                    <br> The webpage can be viewed here: <a class="orange-text " href="Mission_to_Mars/index.html " target="_blank ">Mission to Mars</a>
                                 </p>
                             </div>
-                            <div class="row">
+                            <div class="row ">
                                 <strong>
                                     The scraping script:
                                 </strong>
@@ -207,7 +279,7 @@ browser.visit(url_mars_facts)
 html = browser.html
 soup = bs(html, 'html.parser')
 
-mars_facts_table = f"{soup.find('table', id='tablepress-p-mars-no-2')}"
+mars_facts_table = f"{soup.find( 'table', id='tablepress-p-mars-no-2' )} "
 
 ## Mars Hemispheres
 
@@ -219,7 +291,7 @@ soup = bs(html, 'html.parser')
 
 hemisphere_image_urls = []
 for link in soup.find_all('div', class_='description'):
-hemisphere_image_urls.append({"title": link.h3.text[:-9]})
+hemisphere_image_urls.append({"title ": link.h3.text[:-9]})
 img_page = browser.visit('https://astrogeology.usgs.gov' + link.a['href'])
 html = browser.html
 img_soup = bs(html, 'html.parser')
@@ -227,7 +299,7 @@ for each in img_soup.find_all('a'):
 if (each.text == 'Sample'):
     img_url = each['href']
     break
-hemisphere_image_urls.append({"img_url": img_url})
+hemisphere_image_urls.append({"img_url ": img_url})
 
 data = {'news_title': news_title,
 'news_p': news_p,
@@ -243,26 +315,26 @@ return data
                 </ul>
             </div>
         </main>
-        <footer class="page-footer transparent">
-            <div class="container">
-                <div class="row">
-                    <img id="self-portrait" class="responsive-img circle right" height=289 width=192 src="img/portrait_Bryan_Souza.JPG">
+        <footer class="page-footer transparent ">
+            <div class="container ">
+                <div class="row ">
+                    <img id="self-portrait " class="responsive-img circle right " height=289 width=192 src="img/portrait_Bryan_Souza.JPG ">
                     <h5>
                         A little about me...
                     </h5>
-                    <p class="black-text">
+                    <p class="black-text ">
                         Bryan Souza is a Data Specialist with an expertise in Real Estate. Bryan earned a Data Analytics and Visualization certificate from the UC Davis College of Continuing and Professional Education. Python came easy as he taught himself using the popular
                         Pandas Data Analytics package. These new skills complement Bryan's hunger and determination for finding new information and creating success through positive action.
                         <br>
-                        <a href="contact.html" class="orange-text">Get in touch.</a></p>
+                        <a href="contact.html " class="orange-text ">Get in touch.</a></p>
                 </div>
 
 
             </div>
     </div>
-    <div class="footer-copyright transparent">
-        <div class="container center">
-            <p class="black-text"> © 2020 Bryan Souza</p>
+    <div class="footer-copyright transparent ">
+        <div class="container center ">
+            <p class="black-text "> © 2020 Bryan Souza</p>
         </div>
     </div>
     </footer>
