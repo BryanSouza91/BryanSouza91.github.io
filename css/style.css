@@ -20,4 +20,5 @@ pre {
 
 div.parallax>img {
     object-fit: cover;
+    top: 0;
 }
