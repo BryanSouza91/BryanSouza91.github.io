@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const ImageLoaderWorker = new Worker('/js/workers/image-loader.worker.js')
 const imgElements = document.querySelectorAll('img[data-src]')
 
-
 // We should attach the listener before we pass image URLs to the web worker
 // to catch messages sent prior to the event being attached
 ImageLoaderWorker.addEventListener('message', event => {
