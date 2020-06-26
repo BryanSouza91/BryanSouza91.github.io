@@ -17,3 +17,7 @@ p {
 pre {
     white-space: pre-wrap;
 }
+
+.parallax img {
+    object-fit: contain;
+}

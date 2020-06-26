@@ -15,4 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image Material Boxed logic
     var imgEl = document.querySelectorAll('.materialboxed');
     var img = M.Materialbox.init(imgEl);
+
+    // Parallax logic
+    var parallaxEl = document.querySelectorAll('.parallax');
+    var para = M.Parallax.init(parallaxEl);
 });
