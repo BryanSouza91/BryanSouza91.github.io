@@ -8,6 +8,7 @@ body {
 
 main {
     flex: 1 0 auto;
+    overflow-x: hidden;
 }
 
 p {

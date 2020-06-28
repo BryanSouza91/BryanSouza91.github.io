@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Muli:ital,wght@0,200;0,400;0,900;1,200;1,900&display=swap" rel="stylesheet">
@@ -13,6 +13,10 @@
     <!--Import materialize.css-->
     <link href="css/materialize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico" />
     <title>Bryan Souza Portfolio</title>
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,7 +47,7 @@
     </header>
     <main>
         <div class="parallax-container">
-            <div class="parallax"><img data-src="/img/rapids.jpg" alt="White water flowing over beautiful granite boulders."></div>
+            <div class="parallax"><img data-src="/img/rapids.jpg" alt="White water flowing over beautiful granite boulders." /></div>
         </div>
         <div class="section white">
             <div class="row container">
@@ -118,8 +122,9 @@
                                     Million
                                     Wildfire incidents</strong>. MongoDB was the chosen database for the project because of the speed and simplicity of use. After loading the data into the database, a Flask server app was created to allow interactive
                                         access to the data via the dashboard. The dashboard consisted of various charts produced with Highcharts.js using JavaScript calls to the API serving the MongoDB data.
-                                        <br>
-                                        <br> The project repository can be viewed here: <a class="orange-text" href="https://github.com/BryanSouza91/Project_2">National Wildfires
+                                    </p>
+                                    <p>
+                                        The project repository can be viewed here: <a class="orange-text" href="https://github.com/BryanSouza91/Project_2">National Wildfires
                                     Visualized</a>
                                     </p>
                                 </div>
@@ -176,8 +181,8 @@
                                 <div class="row">
                                     <p>
                                         The API is available for access here: <a class="orange-text" href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank">USGS Earthquake API</a>
-                                        <br> The Map is available for access here: <a class="orange-text" href="quakes/index.html" target="_blank">USGS Earthquake Map</a>
-                                        <br> The repository is available for access here: <a class="orange-text" href="https://github.com/BryanSouza91/BryanSouza91.github.io/tree/main/quakes" target="_blank">USGS Earthquakes repository</a>
+                                        <br> The Map is available for access here: <a class="orange-text" href="quakes/" target="_blank">USGS Earthquake Map</a>
+                                        <br> The repository is available for access here: <a class="orange-text" href="https://github.com/BryanSouza91/BryanSouza91.github.io/tree/main/quakes" target="_blank">USGS Earthquake Map repository</a>
                                     </p>
                                 </div>
                                 <div class="row">
@@ -221,7 +226,10 @@
                                         to 2007 for San Juan and 2001 to 2009 for Iquitos. Two prediction models were used. Facebook Prophet forecasts time series data based on an additive model where non-linear trends are fit with yearly, weekly, and
                                         daily seasonality, plus holiday effects. TensorFlow is a Deep Learning library developed by Google, we developed a simple Long Short-Term Memory(LSTM) model.
                                     </p>
-                                    <img class="responsive-img materialboxed" data-src="/img/sj_predict.jpeg"><br><img class="responsive-img materialboxed" data-src="/img/iq_predict.jpeg ">
+                                    <p>San Juan Predictions</p>
+                                    <img class="responsive-img materialboxed" data-src="/img/sj_predict.jpeg" />
+                                    <p>Iquitos Predictions</p>
+                                    <img class="responsive-img materialboxed" data-src="/img/iq_predict.jpeg" />
                                     <p>
                                         As seen in both of the above graphs plotting the time series predictions over the training and testing true values, both of the machine learning models aren’t able to accurately predict large spikes in Dengue Fever. While neither of these models are perfectly
                                         tuned, fine tuning a machine learning model takes quite a bit of hypothesis testing and therefore time, there seems to be an obvious need to bring in more related data in order to identify potential causal factors
@@ -353,7 +361,6 @@ return data
                     </ul>
                 </div>
             </div>
-
             <br>
             <div class="row container">
                 <div class="row card-panel brown darken-2">
@@ -370,7 +377,9 @@ return data
             </div>
         </div>
         <div class="parallax-container">
-            <div class="parallax"><img data-src="/img/bridge.jpg" alt="Covered bridge with calm water passing under with a view of the rocky shore."></div>
+            <div class="parallax">
+                <img data-src="/img/bridge.jpg" alt="Covered bridge with calm water passing under with a view of the rocky shore." />
+            </div>
         </div>
         <div class="section white">
             <div class="row container">
