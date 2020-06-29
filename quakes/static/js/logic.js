@@ -61,7 +61,7 @@ function createMarkers(response) {
                 html: `<i class="fa fa-exclamation-triangle" style="color: ${markerColor(quake.properties.mag)}"></i>`,
                 iconSize: [20, 20],
                 className: 'myDivIcon'
-            });
+            })
         }).bindTooltip("<div class='popup'><h2>" + quake.properties.place + "</h2>" +
             "<h3> Magnitude: " + quake.properties.mag +
             "<br> Depth of Epicenter: " + quake.geometry.coordinates[2] +
