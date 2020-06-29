@@ -1,3 +1,5 @@
+let mapDiv = document.querySelector('#map');
+let srcBtns = document.querySelectorAll('button');
 let usaCoords = [39.8283, -98.5795];
 let mapZoomLevel = 2.5;
 
@@ -31,7 +33,7 @@ function createMap(earthquakes) {
 function createMarkers(response) {
     // Pull the "features" property off of response.data
     let quakes = response.features;
-    // console.log(quakes)
+    // console.log(quakes);
     // Initialize an array to hold quake markers
     let quakeMarkers = [];
 
@@ -59,23 +61,36 @@ function createMarkers(response) {
                 html: `<i class="fa fa-exclamation-triangle" style="color: ${markerColor(quake.properties.mag)}"></i>`,
                 iconSize: [20, 20],
                 className: 'myDivIcon'
-            })
-        }).bindTooltip("<div class='popup'><h2>" + quake.properties.place + "</h2>"
-            + "<h3> Magnitude: " + quake.properties.mag
-            + "<br> Depth of Epicenter: " + quake.geometry.coordinates[2]
-            + "km<br> Number of 'Felt' Reports(submitted): " + quake.properties.felt
-            + "<br> Time: " + new Date(quake.properties.time + quake.properties.tz)
-            + "</h3></div>");
+            });
+        }).bindTooltip("<div class='popup'><h2>" + quake.properties.place + "</h2>" +
+            "<h3> Magnitude: " + quake.properties.mag +
+            "<br> Depth of Epicenter: " + quake.geometry.coordinates[2] +
+            "km<br> Number of 'Felt' Reports(submitted): " + quake.properties.felt +
+            "<br> Time: " + new Date(quake.properties.time + quake.properties.tz) +
+            "</h3></div>");
 
         quakeMarkers.push(quakeMarker);
-    }
+    };
     // Create a layer group made from the quake markers array, pass it into the createMap function
     createMap(L.layerGroup(quakeMarkers));
-}
-// Perform an API call to the Earthquake Notification Service API to get quake information. Call createMarkers when complete
-fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson")
-    .then(async (response) => {
-        const DATA = await response.json();
-        // console.log(DATA);
-        createMarkers(DATA);
-    });
+};
+
+mapDiv.onload = function() {
+    // Perform an API call to the Earthquake Notification Service API to get quake information. Call createMarkers when complete
+    fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson")
+        .then(async(response) => {
+            const DATA = await response.json();
+            // console.log(DATA);
+            createMarkers(DATA);
+        });
+};
+
+// add class to all buttons
+document.onload = function() {
+        srcBtns.className = 'src-button'
+    }
+    // add active to current active class based on source
+    // use forEach and event listener general function to change source based on btn click
+
+
+// make event listener to call various sources

@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>USGS Earthquakes Map by Bryan Souza</title>
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>USGS Earthquakes Map by Bryan Souza</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
+    <!-- The div that holds our map -->
+    <div id="map"></div>
+    <button id="hour" data-src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"></button>
+    <button id="day" data-src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"></button>
+    <button id="week" data-src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"></button>
+    <button id="month" data-src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"></button>
 
-  <!-- Leaflet JavaScript -->
-  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
+
 </html>
