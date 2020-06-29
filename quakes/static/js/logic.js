@@ -85,8 +85,7 @@ fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojso
 // add class to all buttons
 document.querySelectorAll('button').forEach(btn => {
     btn.classList.add('src-button');
-})
-}
+});
 // add active to current active class based on source
 // use forEach and event listener general function to change source based on btn click
 
