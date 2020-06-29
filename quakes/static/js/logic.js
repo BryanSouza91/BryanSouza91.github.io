@@ -1,6 +1,6 @@
 let mapDiv = document.querySelector('#map');
-let srcBtns = document.querySelectorAll('button');
-let usaCoords = [39.8283, -98.5795];
+let srcBtns =
+    let usaCoords = [39.8283, -98.5795];
 let mapZoomLevel = 2.5;
 
 // Create the createMap function
@@ -84,13 +84,12 @@ fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojso
     });
 
 // add class to all buttons
-srcBtns.onload = function() {
-        srcBtns.forEach((btn) => {
-            btn.className = 'src-button'
-        })
-    }
-    // add active to current active class based on source
-    // use forEach and event listener general function to change source based on btn click
+document.querySelectorAll('button').forEach(btn => {
+    btn.classList.add('src-button');
+})
+}
+// add active to current active class based on source
+// use forEach and event listener general function to change source based on btn click
 
 
 // make event listener to call various sources
