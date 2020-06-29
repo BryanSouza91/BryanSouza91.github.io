@@ -1,6 +1,5 @@
 let mapDiv = document.querySelector('#map');
-let srcBtns =
-    let usaCoords = [39.8283, -98.5795];
+let usaCoords = [39.8283, -98.5795];
 let mapZoomLevel = 2.5;
 
 // Create the createMap function
