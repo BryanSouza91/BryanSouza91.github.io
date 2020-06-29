@@ -75,7 +75,7 @@ function createMarkers(response) {
     createMap(L.layerGroup(quakeMarkers));
 };
 
-mapDiv.onload = function() {
+document.onload = function() {
     // Perform an API call to the Earthquake Notification Service API to get quake information. Call createMarkers when complete
     fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson")
         .then(async(response) => {
