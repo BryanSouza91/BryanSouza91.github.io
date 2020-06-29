@@ -86,8 +86,10 @@ mapDiv.onload = function() {
 };
 
 // add class to all buttons
-document.onload = function() {
-        srcBtns.className = 'src-button'
+srcBtns.onload = function() {
+        srcBtns.forEach((btn) => {
+            btn.className = 'src-button'
+        })
     }
     // add active to current active class based on source
     // use forEach and event listener general function to change source based on btn click
